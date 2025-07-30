@@ -11,6 +11,25 @@
   </head>
 
   <body>
+  <header>
+   <% if user_signed_in? %>
+    <li>
+     <%= link_to "Home", homes_top_path %>
+    </li>
+    <li>
+    <%= link_to "Users", books_user_path %>
+   </li>
+   <li>
+   <%= link_to "Books", books_path %>
+  </li>
+    <li>
+     <%= link_to "Log out", destroy_user_session_path_, method: :delete %>
+    </li>
+    <% else %>
+     <li>
+     <%= link_to "Home", homes_top_path %>
+     </li>
+  </header>
     <%= yield %>
   </body>
 </html>

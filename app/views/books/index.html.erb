@@ -1,0 +1,10 @@
+<h1class="title">Books</h1>
+<p class="nav">Title</p>
+<p class="nav">Opinion</p>
+<%= @books.each do |book| %>
+ <div>
+  <p><%= image_tag 'default-image.jpg' %></p>
+  <p><%= book.name %></p>
+  <p><%= book.body %></p>
+ </div>
+<% end %>

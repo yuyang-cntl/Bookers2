@@ -17,7 +17,7 @@
    </div>
    <% if user_signed_in? %>
     <li class="nav-item">
-     <%= link_to "Home", "/" %>
+     <%= link_to "Home", root_path %>
     </li>
     <li class="nav-item">
     <%= link_to "Users", user_path(current_user.id) %>
@@ -36,10 +36,10 @@
      <%= link_to "About", "/" %>
      </li>
      <li class="nav-item">
-     <%= link_to "Sign up", "/" %>
+     <%= link_to "Sign up", new_user_registration_path %>
      </li>
      <li class="nav-item">
-     <%= link_to "Log in", "/" %>
+     <%= link_to "Log in", new_user_session_path %>
      </li>
     <% end %>
   </header>

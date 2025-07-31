@@ -1,1 +1,15 @@
-<h1 class="title">welcome to</h1>
+<h1 class="title">welcome to Bookers !!</h1>
+<p>In <strong>Bookers,</strong></p>
+<p>you can share and exchange your opinions , inpressions , and emotions</p>
+<p>about various books!</p>
+
+ <div class="action">
+  <%= form_with model:@user, url: new_user_session_path, method: :post do |f| %>
+   <%= f.submit "Log in" %>
+  <% end %>
+
+  <%= form_with model:@user, url: new_user_registration_path, method: :get do |f| %>
+   <%= f.submit "Sign up" %>
+  <% end %>
+ </div>
+

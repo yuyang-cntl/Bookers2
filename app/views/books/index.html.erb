@@ -1,10 +1,34 @@
-<h1class="title">Books</h1>
-<p class="nav">Title</p>
-<p class="nav">Opinion</p>
+
+
+<h1 class="title">Books</h1>
+
+<div>
+ <p class="nav">Title</p>
+ <%= link_to books_path(book.id) do %>
+  <p><%= image_tag 'default-image.jpg' %></p>
+  <p>リーダブルコード</p>
+  <p>トラブル知らずのシステム設計</p>
+  <p>楽しいRuby</p>
+  <% end %>
+</div>
+<div>
+ <p class="nav">Opinion</p>
+  <p>より良いコードを書くためのシンプルで実践的なテクニック。</p>
+  <p>システム設計の要点を図解で説明してくれます。</p>
+  <p>Rubyの入門におすすめです。</p>
+</div>
+
+
+#  ↓一覧画面でリンク先を指定したいがエラー中
 <%= @books.each do |book| %>
  <div>
+  <%= link_to books_path(book.id) do %>
+    <%= image_tag image.get_image %>
+    <% end %>
   <p><%= image_tag 'default-image.jpg' %></p>
+  <%= link_to books_path(book.id) do %>
   <p><%= book.name %></p>
+  <% end %>
   <p><%= book.body %></p>
  </div>
 <% end %>

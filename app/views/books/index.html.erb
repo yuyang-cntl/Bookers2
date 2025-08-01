@@ -3,23 +3,21 @@
  <p class="nav">Opinion</p>
 
 <div>
- <% @books.each do |book| %>
-  <%= link_to book_path(book) do %> 
+  <%= link_to book_path(@books) do %> 
    <p><%= image_tag 'default-image.jpg' %></p>
    <p>リーダブルコード</p>
   <% end %>
    <p>より良いコードを書くためのシンプルで実践的なテクニック。</p>
 
-  <%= link_to book_path(book) do %> 
+  <%= link_to book_path(@books) do %> 
    <p><%= image_tag 'default-image.jpg' %></p>
    <p>トラブル知らずのシステム設計</p>
   <% end %>
    <p>システム設計の要点を図解で説明してくれます。</p>
 
-  <%= link_to book_path(book) do %> 
+  <%= link_to book_path(@books) do %> 
    <p><%= image_tag 'default-image.jpg' %></p>
    <p>楽しいRuby</p>
-     <% end %>
+  <% end %>
    <p>Rubyの入門におすすめです。</p>
- <% end %>
 </div>

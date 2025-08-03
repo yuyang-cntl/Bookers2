@@ -15,7 +15,7 @@
    <%= link_to user_path(@user.id) do %>
    <%= image_tag @user.get_profile_image(100,100) %>
    <% end %>
-   <%= @books.each do |book| %>
+   <% @books.each do |book| %>
    <%= link_to book_path(book) do %>
     <p><%= @books.name %></p>
    <% end %>

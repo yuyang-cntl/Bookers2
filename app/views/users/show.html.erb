@@ -1,12 +1,4 @@
-<h1>User info</h1>
- <div>
-  <%= image_tag @user.get_profile_image(100,100) %>
-   <h5>name<%= @user.name %></h5>
-   <h5>introduction</h5>
-  <% if @user == current_user %>
-  <%= button_to "edit", edit_user_path(@user), method: :get, class: "btn btn-white-hover" %>
-  <% end %>
- </div>
+<%= render 'books/list', book: @book, user: @user %>
 
 <h1 class="title">Books</h1>
  <p class="nav">Title</p>

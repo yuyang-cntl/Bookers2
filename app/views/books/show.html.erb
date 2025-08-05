@@ -10,4 +10,6 @@
   <p><%= @books.name %></p>
  <% end %>
   <p><%= @book.body %></p>
+  <%= button_to "Edit", edit_book_path(@book), method: :get, class: "btn btn-green-hover" %>
+  <%= button_to "Destroy", book_path(@book), method: :delete, class: "btn btn-green-hover", "data-confirm" => "本当に消しますか？" %>
 </div>

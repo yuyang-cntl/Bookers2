@@ -4,17 +4,19 @@
    <h5>name<%= user.name %></h5>
    <h5>introduction</h5>
   <% if user == current_user %>
-  <%= button_to "edit", edit_user_path(user), method: :get, class: "btn btn-white-hover" %>
+  <%= button_to edit_user_path(user), method: :get, class: "btn btn-white-hover" do %>
+   <i class="fa-solid fa-user-gear"></i>
+  <% end %>
   <% end %>
  </div>
 
  <h1>NEW book</h1>
 <% if book.errors.any? %>
  <%= book.errors.count %>件のエラーが発生しました
- <ul>
- <% book.errors.full_messages.each do |message| %>
-  <li><%= message %></li>
-  <% end %>
+  <ul>
+   <% book.errors.full_messages.each do |message| %>
+    <li><%= message %></li>
+   <% end %>
   </ul>
  <% end %>
  

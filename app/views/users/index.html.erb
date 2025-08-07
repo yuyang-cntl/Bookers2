@@ -1,11 +1,30 @@
-<%= render 'books/list', book: @book, user: @user %>
+<div class="container-fluid">
+ <div class="row">
+  <div class="col-md-3 mt-1">
+   <%= render 'books/list', book: @book, user: @user %>
+  </div>
+  <div class="offset-md-1 col-md-8">
+   <h2 class= "pt-2 pb-2 custom-heading">Users</h2>
+   <div class= "d-flex text-align-start custom-line pb-1">
+    <p class="col-md-5"><strong>image</strong></p>
+    <p class="col-md-7"><strong>name</strong></p>
+   </div>
+   
 
-<h1>Users</h1>
-<p>image</p>
-<p>name</p>
-
-<% @users.each do |user| %>
- <%= image_tag user.get_profile_image(100,100) %>
- <%= user.name %>
- <%= link_to "show",user_path(user) %> 
-<% end %>
+   <% @users.each do |user| %>
+    <div class="d-flex custom-heading">
+     <div class="flex-colmun col-md-5 py-3">
+      <%= image_tag user.get_profile_image(80,80), style:"width: 80px; height: 80px;" %>
+     </div>
+     <div class="flex-colmun justify-content-between align-items-center col-md-4 py-3">
+      <%= user.name %>
+     </div>
+     <div class="flex-colmun justify-content-between align-items-center col-md-3 py-3">
+      <%= link_to "show",user_path(user) %> 
+     </div>
+    </div>
+   <% end %>
+   <%= paginate @users %>
+  </div>
+ </div>
+</div>

@@ -1,17 +1,33 @@
-<%= render 'list', book: @book, user: @user %>
+<div class="container-fluid">
+ <div class="row">
+  <div class="col-md-3 mt-1">
+   <%= render 'list', book: @book, user: @user %>
+  </div>
+  <div class="offset-md-1 col-md-8">
+   <h2 class="pt-2 pb-2 custom-heading">Books</h2>
+   <div class="d-flex text-align-start custom-line pb-1">
+    <p class="offset-md-2 col-md-3"><strong>Title</strong></p>
+    <p class="col-md-7"><strong>Opinion</strong></p>
+   </div>
 
-<h1 class="title">Books</h1>
- <p class="nav">Title</p>
- <p class="nav">Opinion</p>
-
-<div>
- <% @books.each do |book| %>
-  <%= link_to user_path(book.user.id) do %>
-  <%= image_tag book.user.get_profile_image(100,100) %>
-  <% end %>
-  <%= link_to book_path(book) do %>
-  <p><%= @books.name %></p>
- <% end %>
-  <p><%= book.body %></p>
- <% end %>
+   <% @books.each do |book| %>
+    <div class="d-flex custom-heading">
+     <div class="flex-colmun col-md-2 py-3">
+      <%= link_to user_path(book.user.id) do %>
+       <%= image_tag book.user.get_profile_image(80,80) %>
+      <% end %>
+     </div>
+     <div class="flex-colmun justify-content-between align-items-center col-md-3 py-3">
+      <%= link_to book_path(book) do %>
+       <p><%= @books.name %></p>
+      <% end %>
+     </div>
+     <div class="flex-colmun justify-content-between align-items-center col-md-7 py-3">
+      <p><%= book.body %></p>
+     </div>
+    </div>
+   <% end %>
+   <%= paginate @books %>
+  </div>
+ </div>
 </div>

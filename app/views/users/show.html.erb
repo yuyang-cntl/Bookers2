@@ -3,19 +3,35 @@
 <%= flash[:sign_up_notice] %>
 </div>
 
-<%= render 'books/list', book: @book, user: @user %>
-
-<h1 class="title">Books</h1>
- <p class="nav">Title</p>
- <p class="nav">Opinion</p>
-  <div>
-   <%= link_to user_path(@user.id) do %>
-   <%= image_tag @user.get_profile_image(100,100) %>
-   <% end %>
-   <% @books.each do |book| %>
-   <%= link_to book_path(book) do %>
-    <p><%= book.user.name %></p>
-   <% end %>
-    <p><%= book.body %></p>
+<div class="container-fluid">
+ <div class="row">
+  <div class="col-md-3 mt-1">
+   <%= render 'books/list', book: @book, user: @user %>
   </div>
- <% end %>
+   <div class="offset-md-1 col-md-8">
+    <h2 class="pt-2 pb-2 custom-heading">Books</h2>
+    <div class="d-flex text-align-start custom-line pb-1">
+     <p class="offset-md-2 col-md-3"><strong>Title</strong></p>
+     <p class="col-md-7"><strong>Opinion</strong></p>
+    </div>
+    <div class="d-flex custom-heading">
+     <div class="flex-colmun col-md-2 py-3">
+      <%= link_to user_path(@user.id) do %>
+       <%= image_tag @user.get_profile_image(80,80) %>
+      <% end %>
+     </div>
+     <div class="flex-colmun justify-content-between align-items-center col-md-3 py-3">
+      <% @books.each do |book| %>
+       <%= link_to book_path(book) do %>
+       <p><%= book.user.name %></p>
+      <% end %>
+     </div>
+     <div class="flex-colmun justify-content-between align-items-center col-md-7 py-3">
+      <p><%= book.body %></p>
+     </div>
+   </div>
+   <% end %>
+   <%= paginate @books %>
+  </div>
+ </div>
+</div>

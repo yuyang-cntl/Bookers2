@@ -23,7 +23,7 @@
      <div class="flex-colmun justify-content-between align-items-center col-md-3 py-3">
       <% @books.each do |book| %>
        <%= link_to book_path(book) do %>
-       <p><%= book.user.name %></p>
+       <p><%= book.title %></p>
       <% end %>
      </div>
      <div class="flex-colmun justify-content-between align-items-center col-md-7 py-3">

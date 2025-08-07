@@ -1,34 +1,35 @@
 <div class="d-flex flex-column mt-1 mx-3">
- <div class=container>
-  <div class="row">
-   <div class="col-md-9 text-start">
+ <div class="container-fluid">
+  <div class="row ml-3">
+   <div class="text-start">
     <h2>User info</h2>
     <div class="border-bottom mb-2">
      <%= image_tag user.get_profile_image(100,100) %>
     </div>
-    <div class="d-flex border-bottom mb-2 pl-3">
-     <p><strong>name</strong></p>
-     <p class="ml-auto pr-5"><strong><%= user.name %></strong></p>
+    <div class="d-flex border-bottom mb-2 pb-2">
+     <div class="col-7"><strong>name</strong></div>
+     <div class="col-5"><strong><%= user.name %></strong></div>
     </div>
-     <p class="pl-3 mb-5"><strong>introduction</strong></p>
+    <div class="d-flex mb-5">
+     <div class="col-7 text-start"><strong>introduction</strong></div>
+     <div class="col-5 text-start"><strong><%= user.introduction %></strong></div>
+    </div>
   
-    <% if user == current_user %>
     <%= button_to edit_user_path(user), method: :get, class: "btn btn-outline-secondary btn-white-hover", style:"width:300px;" do %>
      <i class="fa-solid fa-user-gear icon-hover-white text-secondary"></i>
     <% end %>
-    <% end %>
 
    <h2 class="mt-3 pb-2">NEW book</h2>
-   <% if book.errors.any? %>
-   <%= book.errors.count %>件のエラーが発生しました
+   <% if @book.errors.any? %>
+   <%= @book.errors.count %>件のエラーが発生しました
     <ul>
-    <% book.errors.full_messages.each do |message| %>
+    <% @book.errors.full_messages.each do |message| %>
      <li><%= message %></li>
     <% end %>
     </ul>
    <% end %>
  
-   <%= form_with model: @book, url: '/books', method: :post do |f| %>
+   <%= form_with model: book do |f| %>
     <div style="width: 280px;">
      <p>Title</p>
      <%= f.text_field :title, class:"form-control w-100" %>

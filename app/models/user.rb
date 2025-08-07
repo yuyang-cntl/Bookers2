@@ -8,13 +8,14 @@ class User < ApplicationRecord
   validates :name,
     presence: true,
     uniqueness: true,
-    length: { minimum: 2, maxmum: 20 }
+    length: { minimum: 2, maximum: 20 }
   validates :introduction,
-    length: { minimum: 1, maxmum: 50 }
+    length: { maximum: 50 },
+    allow_blank: true
 
   def get_profile_image(width = 100, height = 100)
     unless profile_image.attached?
-      file_path = Rails.root.join('app/assets/images/default-image.jpg')
+      file_path = Rails.root.join('public/images/default-image.jpg')
       profile_image.attach(io: File.open(file_path), filename: 'default-image.jpg', content_type: 'image/jpeg')
     end
     profile_image.variant(resize_to_fill: [width, height]).processed

@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container">
  <div class="row">
   <div class="col-md-3 mt-1">
    <%= render 'books/list', book: @book, user: @user %>
@@ -20,7 +20,7 @@
       <%= user.name %>
      </div>
      <div class="flex-colmun justify-content-between align-items-center col-md-3 py-3">
-      <%= link_to "show",user_path(user) %> 
+      <%= link_to "Show",user_path(user) %> 
      </div>
     </div>
    <% end %>

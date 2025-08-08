@@ -1,3 +1,13 @@
+<% if @user.errors.any? %>
+  <div class="alert alert-danger">
+    <ul>
+      <% @user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
 <div class="container text-start">
  <div class="row">
   <div class="col-md-5 mx-auto">

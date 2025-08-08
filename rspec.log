@@ -489,7 +489,7 @@ Failures:
 
   23) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 表示内容の確認 自分の投稿と他人の投稿のタイトルのリンク先がそれぞれ正しい
       [31mFailure/Error: expect(page).to have_link book.title, href: book_path(book)[0m
-      [31m  expected to find link "2zifv" with href "/bookers2/books/1" but there were no matches[0m
+      [31m  expected to find link "ljuxc" with href "/bookers2/books/1" but there were no matches[0m
       [36m# ./spec/system/02_after_login_spec.rb:55:in `block (4 levels) in <main>'[0m
 
   24) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクが存在する
@@ -499,7 +499,7 @@ Failures:
 
   25) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 「New book」と表示される
       [31mFailure/Error: expect(page).to have_content 'New book'[0m
-      [31m  expected to find text "New book" in "Bookers\nHome Users Books Log out\nUser info\nname\no5iajdr6hq\nintroduction\njeg9m4dsco3x4sr97zpm\nNEW book\nTitle\nOpinion\nBooks\nTitle\nOpinion\nBook\n8yhkmdo117k9crauhmme\nBook\nch48u9bogmms5u79fpjh\nCopyRight Infratop.inc". (However, it was found 1 time using a case insensitive search.)[0m
+      [31m  expected to find text "New book" in "Bookers\nHome Users Books Log out\nUser info\nname\n8yv4wwif06\nintroduction\nhuiwdknr4batj5kz5znu\nNEW book\nTitle\nOpinion\nBooks\nTitle\nOpinion\nBook\nnbo43f6w151ezktg0ytr\nBook\n6ey63v11zj3hxliv7qbj\nCopyRight Infratop.inc". (However, it was found 1 time using a case insensitive search.)[0m
       [36m# ./spec/system/02_after_login_spec.rb:73:in `block (4 levels) in <main>'[0m
 
   26) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 投稿成功のテスト リダイレクト先が、保存できた投稿の詳細画面になっている
@@ -522,7 +522,7 @@ Failures:
 
   28) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 「Book detail」と表示される
       [31mFailure/Error: expect(page).to have_content 'Book detail'[0m
-      [31m  expected to find text "Book detail" in "Bookers\nHome Users Books Log out\nUser info\nname\nqvwdtai4ej\nintroduction\ncsf8icyzl1ug3jyu6z3q\nNEW book\nTitle\nOpinion\nBooks detail\nqvwdtai4ej\n824h5\nxek2ixq8cntgz3cq6hip\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "Book detail" in "Bookers\nHome Users Books Log out\nUser info\nname\n7gk49nizqu\nintroduction\n8l7an0glwcjz6cw2njfw\nNEW book\nTitle\nOpinion\nBooks detail\n7gk49nizqu\nzykwg\nld4jpg8fafvoz3qhh9pf\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/02_after_login_spec.rb:118:in `block (4 levels) in <main>'[0m
 
   29) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 投稿の編集リンクが表示される
@@ -542,7 +542,7 @@ Failures:
 
   32) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 「New book」と表示される
       [31mFailure/Error: expect(page).to have_content 'New book'[0m
-      [31m  expected to find text "New book" in "Bookers\nHome Users Books Log out\nUser info\nname\nzle1nz2cvc\nintroduction\nwlr6tbu41r974pp8wkk2\nNEW book\nTitle\nOpinion\nBooks detail\nzle1nz2cvc\n8lioi\neernd0tvjtwh7j8nwdav\nCopyRight Infratop.inc". (However, it was found 1 time using a case insensitive search.)[0m
+      [31m  expected to find text "New book" in "Bookers\nHome Users Books Log out\nUser info\nname\nul56ax4u9k\nintroduction\n0e6ljg0cpmkv60yikrn1\nNEW book\nTitle\nOpinion\nBooks detail\nul56ax4u9k\nn3p6p\nnx59v23uo0rnvl0u3axa\nCopyRight Infratop.inc". (However, it was found 1 time using a case insensitive search.)[0m
       [36m# ./spec/system/02_after_login_spec.rb:146:in `block (4 levels) in <main>'[0m
 
   33) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 編集リンクのテスト 編集画面に遷移する
@@ -612,7 +612,7 @@ Failures:
 
   42) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 「New book」と表示される
       [31mFailure/Error: expect(page).to have_content 'New book'[0m
-      [31m  expected to find text "New book" in "Bookers\nHome Users Books Log out\nUser info\nname\n7nodlfbkux\nintroduction\n0x1tukqm81crjk1ms7dh\nNEW book\nTitle\nOpinion\nUsers\nimage\nname\n7nodlfbkux\nshow\nwilac1dyef\nshow\nCopyRight Infratop.inc". (However, it was found 1 time using a case insensitive search.)[0m
+      [31m  expected to find text "New book" in "Bookers\nHome Users Books Log out\nUser info\nname\nc7o1xmri7y\nintroduction\n912zokuepfmvwxgvppdx\nNEW book\nTitle\nOpinion\nUsers\nimage\nname\nc7o1xmri7y\nshow\n2wisyfzjer\nshow\nCopyRight Infratop.inc". (However, it was found 1 time using a case insensitive search.)[0m
       [36m# ./spec/system/02_after_login_spec.rb:294:in `block (4 levels) in <main>'[0m
 
   43) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト 表示の確認 URLが正しい
@@ -631,7 +631,7 @@ Failures:
 
   45) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 「New book」と表示される
       [31mFailure/Error: expect(page).to have_content 'New book'[0m
-      [31m  expected to find text "New book" in "Bookers\nHome Users Books Log out\nUser info\nname\nl9fqb6142d\nintroduction\np84nw5m1es0640m5eh9g\nNEW book\nTitle\nOpinion\nBooks\nTitle\nOpinion\n7c0nq\nz8th7sw6gpyp6yw281x6\nCopyRight Infratop.inc". (However, it was found 1 time using a case insensitive search.)[0m
+      [31m  expected to find text "New book" in "Bookers\nHome Users Books Log out\nUser info\nname\nch388gcy5i\nintroduction\nwhjwwjnliitev8t4hl5i\nNEW book\nTitle\nOpinion\nBooks\nTitle\nOpinion\n8lda0\nrenli8g0i4iqtxc2rta7\nCopyRight Infratop.inc". (However, it was found 1 time using a case insensitive search.)[0m
       [36m# ./spec/system/02_after_login_spec.rb:348:in `block (4 levels) in <main>'[0m
 
   46) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 URLが正しい
@@ -654,7 +654,7 @@ Failures:
 
   48) [STEP3] 仕上げのテスト 処理失敗時のテスト ユーザのプロフィール情報編集失敗: nameを1文字にする バリデーションエラーが表示される
       [31mFailure/Error: expect(page).to have_content "is too short (minimum is 2 characters)"[0m
-      [31m  expected to find text "is too short (minimum is 2 characters)" in "Bookers\nHome Users Books Log out\nUser info\nName\nImage\nIntroduction\n5qql6wslas8fmuyxho54\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "is too short (minimum is 2 characters)" in "Bookers\nHome Users Books Log out\nUser info\nName\nImage\nIntroduction\nnqtyitmz7lae3pf0vkts\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:116:in `block (4 levels) in <main>'[0m
 
   49) [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの新規投稿失敗: 投稿一覧画面から行い、titleを空にする 投稿一覧画面を表示している
@@ -677,7 +677,7 @@ Failures:
 
   51) [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの更新失敗: titleを空にする エラーメッセージが表示される
       [31mFailure/Error: expect(page).to have_content 'error'[0m
-      [31m  expected to find text "error" in "Bookers\nHome Users Books Log out\nEditing Book\nTitle\nOpinion kz2bsz9vr0rhov9lrp41\nShow\n|\nBack\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "error" in "Bookers\nHome Users Books Log out\nEditing Book\nTitle\nOpinion xqitqs6mq5x6zlqx31de\nShow\n|\nBack\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:171:in `block (4 levels) in <main>'[0m
 
   52) [STEP3] 仕上げのテスト ログインしていない場合のアクセス制限のテスト: アクセスできず、ログイン画面に遷移する ユーザ一覧画面
@@ -745,7 +745,7 @@ Failures:
 
   59) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 「Book detail」と表示される
       [31mFailure/Error: expect(page).to have_content 'Book detail'[0m
-      [31m  expected to find text "Book detail" in "Bookers\nHome Users Books Log out\nUser info\nname\nn5gknvltvu\nintroduction\n43j8cs4velqfkqjo0k9z\nNEW book\nTitle\nOpinion\nBooks detail\nn5gknvltvu\nkr0vs\n14flqg5ikv2ym69lxmhr\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "Book detail" in "Bookers\nHome Users Books Log out\nUser info\nname\n35ks2ug1n5\nintroduction\ntdqrf8be887riejp9vc9\nNEW book\nTitle\nOpinion\nBooks detail\n35ks2ug1n5\nc0tjw\nl8il90d87jo54dc05tn6\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:223:in `block (5 levels) in <main>'[0m
 
   60) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 他人のユーザ編集画面へのリンクが存在する
@@ -812,7 +812,7 @@ Failures:
       [31m  No route matches [GET] "/home/about"[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:372:in `block (4 levels) in <main>'[0m
 
-Finished in 35.07 seconds (files took 1.72 seconds to load)
+Finished in 36.84 seconds (files took 1.73 seconds to load)
 [31m201 examples, 69 failures[0m
 
 Failed examples:

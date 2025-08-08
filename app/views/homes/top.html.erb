@@ -10,13 +10,8 @@
    <p>about various books!</p>
 
    <div class="d-flex flex-column align-items-center">
-  <%= form_with model:@user, url: new_user_session_path, method: :post do |f| %>
-   <%= f.submit "Log in", class:"btn btn-info mb-3", style:"width:450px;" %>
-  <% end %>
-
-  <%= form_with model:@user, url: new_user_registration_path, method: :get do |f| %>
-   <%= f.submit "Sign up", class:"btn btn-success", style:"width:450px;" %>
-  <% end %>
+   <%= link_to "Log in", new_user_session_path, class:"btn btn-info mb-3", style:"width:450px;" %>
+   <%= link_to "Sign up", new_user_registration_path, class:"btn btn-success", style:"width:450px;" %>
    </div>
   </div>
  </div>

@@ -1,4 +1,13 @@
-<div class="container-fluid">
+<% if @book.errors.any? %>
+  <div class="alert alert-danger">
+    <ul>
+      <% @book.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+<div class="container">
  <div class="row">
   <div class="col-md-3 mt-1">
    <%= render 'list', book: @book, user: @user %>
@@ -19,7 +28,7 @@
      </div>
      <div class="flex-colmun justify-content-between align-items-center col-md-3 py-3">
       <%= link_to book_path(book) do %>
-       <p><%= @books.name %></p>
+       <p><%= book.title %></p>
       <% end %>
      </div>
      <div class="flex-colmun justify-content-between align-items-center col-md-7 py-3">

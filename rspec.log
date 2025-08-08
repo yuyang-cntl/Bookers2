@@ -2,17 +2,17 @@
 UsersController
   GET #edit
     ログインユーザーの場合
-[31m      レスポンスが成功すること (FAILED - 1)[0m
-[31m      @userが正しく設定されていること (FAILED - 2)[0m
+[32m      レスポンスが成功すること[0m
+[32m      @userが正しく設定されていること[0m
 
 Bookモデルのテスト
   バリデーションのテスト
     titleカラム
-[31m      空欄でないこと (FAILED - 3)[0m
+[32m      空欄でないこと[0m
     bodyカラム
-[31m      空欄でないこと (FAILED - 4)[0m
-[31m      200文字以下であること: 200文字は〇 (FAILED - 5)[0m
-[31m      200文字以下であること: 201文字は× (FAILED - 6)[0m
+[32m      空欄でないこと[0m
+[32m      200文字以下であること: 200文字は〇[0m
+[32m      200文字以下であること: 201文字は×[0m
   アソシエーションのテスト
     Userモデルとの関係
 [32m      N:1となっている[0m
@@ -20,15 +20,15 @@ Bookモデルのテスト
 Userモデルのテスト
   バリデーションのテスト
     nameカラム
-[31m      空欄でないこと (FAILED - 7)[0m
-[31m      2文字以上であること: 1文字は× (FAILED - 8)[0m
-[31m      2文字以上であること: 2文字は〇 (FAILED - 9)[0m
-[31m      20文字以下であること: 20文字は〇 (FAILED - 10)[0m
-[31m      20文字以下であること: 21文字は× (FAILED - 11)[0m
-[31m      一意性があること (FAILED - 12)[0m
+[32m      空欄でないこと[0m
+[32m      2文字以上であること: 1文字は×[0m
+[32m      2文字以上であること: 2文字は〇[0m
+[32m      20文字以下であること: 20文字は〇[0m
+[32m      20文字以下であること: 21文字は×[0m
+[32m      一意性があること[0m
     introductionカラム
-[31m      50文字以下であること: 50文字は〇 (FAILED - 13)[0m
-[31m      50文字以下であること: 51文字は× (FAILED - 14)[0m
+[32m      50文字以下であること: 50文字は〇[0m
+[32m      50文字以下であること: 51文字は×[0m
   アソシエーションのテスト
     Bookモデルとの関係
 [32m      1:Nとなっている[0m
@@ -36,14 +36,14 @@ Userモデルのテスト
 [STEP1] ユーザログイン前のテスト
   トップ画面のテスト
     表示内容の確認
-[32m      URLが正しい[0m
-[31m      Log inリンクが表示される: 青色のボタンの表示が「Log in」である (FAILED - 15)[0m
-[31m      Log inリンクの内容が正しい (FAILED - 16)[0m
-[31m      Sign upリンクが表示される: 緑色のボタンの表示が「Sign up」である (FAILED - 17)[0m
-[31m      Sign upリンクの内容が正しい (FAILED - 18)[0m
+[31m      URLが正しい (FAILED - 1)[0m
+[31m      Log inリンクが表示される: 青色のボタンの表示が「Log in」である (FAILED - 2)[0m
+[31m      Log inリンクの内容が正しい (FAILED - 3)[0m
+[31m      Sign upリンクが表示される: 緑色のボタンの表示が「Sign up」である (FAILED - 4)[0m
+[31m      Sign upリンクの内容が正しい (FAILED - 5)[0m
   アバウト画面のテスト
     表示内容の確認
-[31m      URLが正しい (FAILED - 19)[0m
+[31m      URLが正しい (FAILED - 6)[0m
   ヘッダーのテスト: ログインしていない場合
     表示内容の確認
 [32m      Bookersリンクが表示される: 左上から1番目のリンクが「Bookers」である[0m
@@ -52,14 +52,14 @@ Userモデルのテスト
 [32m      Sign upリンクが表示される: 左上から4番目のリンクが「Sign up」である[0m
 [32m      Log inリンクが表示される: 左上から5番目のリンクが「Log in」である[0m
     リンクの内容を確認
-[32m      Bookersを押すと、トップ画面に遷移する[0m
-[32m      Homeを押すと、トップ画面に遷移する[0m
-[31m      Aboutを押すと、アバウト画面に遷移する (FAILED - 20)[0m
-[32m      Sign upを押すと、新規登録画面に遷移する[0m
-[32m      Log inを押すと、ログイン画面に遷移する[0m
+[31m      Bookersを押すと、トップ画面に遷移する (FAILED - 7)[0m
+[31m      Homeを押すと、トップ画面に遷移する (FAILED - 8)[0m
+[31m      Aboutを押すと、アバウト画面に遷移する (FAILED - 9)[0m
+[31m      Sign upを押すと、新規登録画面に遷移する (FAILED - 10)[0m
+[31m      Log inを押すと、ログイン画面に遷移する (FAILED - 11)[0m
   ユーザ新規登録のテスト
     表示内容の確認
-[32m      URLが正しい[0m
+[31m      URLが正しい (FAILED - 12)[0m
 [32m      「Sign up」と表示される[0m
 [32m      nameフォームが表示される[0m
 [32m      emailフォームが表示される[0m
@@ -67,1614 +67,805 @@ Userモデルのテスト
 [32m      password_confirmationフォームが表示される[0m
 [32m      Sign upボタンが表示される[0m
     新規登録成功のテスト
-[31m      正しく新規登録される (FAILED - 21)[0m
-[31m      新規登録後のリダイレクト先が、新規登録できたユーザの詳細画面になっている (FAILED - 22)[0m
+[32m      正しく新規登録される[0m
+[31m      新規登録後のリダイレクト先が、新規登録できたユーザの詳細画面になっている (FAILED - 13)[0m
   ユーザログイン
     表示内容の確認
-[32m      URLが正しい[0m
+[31m      URLが正しい (FAILED - 14)[0m
 [32m      「Log in」と表示される[0m
 [32m      nameフォームが表示される[0m
 [32m      passwordフォームが表示される[0m
 [32m      Log inボタンが表示される[0m
 [32m      emailフォームは表示されない[0m
     ログイン成功のテスト
-[31m      ログイン後のリダイレクト先が、ログインしたユーザの詳細画面になっている (FAILED - 23)[0m
+[31m      ログイン後のリダイレクト先が、ログインしたユーザの詳細画面になっている (FAILED - 15)[0m
     ログイン失敗のテスト
-[32m      ログインに失敗し、ログイン画面にリダイレクトされる[0m
+[31m      ログインに失敗し、ログイン画面にリダイレクトされる (FAILED - 16)[0m
   ヘッダーのテスト: ログインしている場合
     ヘッダーの表示を確認
-[31m      Bookersリンクが表示される: 左上から1番目のリンクが「Bookers」である (FAILED - 24)[0m
-[31m      Homeリンクが表示される: 左上から2番目のリンクが「Home」である (FAILED - 25)[0m
-[31m      Usersリンクが表示される: 左上から3番目のリンクが「Users」である (FAILED - 26)[0m
-[31m      Booksリンクが表示される: 左上から4番目のリンクが「Books」である (FAILED - 27)[0m
-[31m      Log outリンクが表示される: 左上から5番目のリンクが「Log out」である (FAILED - 28)[0m
+[32m      Bookersリンクが表示される: 左上から1番目のリンクが「Bookers」である[0m
+[32m      Homeリンクが表示される: 左上から2番目のリンクが「Home」である[0m
+[32m      Usersリンクが表示される: 左上から3番目のリンクが「Users」である[0m
+[32m      Booksリンクが表示される: 左上から4番目のリンクが「Books」である[0m
+[32m      Log outリンクが表示される: 左上から5番目のリンクが「Log out」である[0m
   ユーザログアウトのテスト
     ログアウト機能のテスト
-[31m      正しくログアウトできている: ログアウト後のリダイレクト先においてAbout画面へのリンクが存在する (FAILED - 29)[0m
-[31m      ログアウト後のリダイレクト先が、トップになっている (FAILED - 30)[0m
+[31m      正しくログアウトできている: ログアウト後のリダイレクト先においてAbout画面へのリンクが存在する (FAILED - 17)[0m
+[31m      ログアウト後のリダイレクト先が、トップになっている (FAILED - 18)[0m
 
 [STEP2] ユーザログイン後のテスト
   ヘッダーのテスト: ログインしている場合
     リンクの内容を確認: ※logoutは『ユーザログアウトのテスト』でテスト済みになります。
-[31m      Homeを押すと、自分のユーザ詳細画面に遷移する (FAILED - 31)[0m
-[31m      Usersを押すと、ユーザ一覧画面に遷移する (FAILED - 32)[0m
-[31m      Booksを押すと、投稿一覧画面に遷移する (FAILED - 33)[0m
+[31m      Homeを押すと、自分のユーザ詳細画面に遷移する (FAILED - 19)[0m
+[31m      Usersを押すと、ユーザ一覧画面に遷移する (FAILED - 20)[0m
+[31m      Booksを押すと、投稿一覧画面に遷移する (FAILED - 21)[0m
   投稿一覧画面のテスト
     表示内容の確認
-[31m      URLが正しい (FAILED - 34)[0m
-[31m      自分と他人の画像のリンク先が正しい (FAILED - 35)[0m
-[31m      自分の投稿と他人の投稿のタイトルのリンク先がそれぞれ正しい (FAILED - 36)[0m
-[31m      自分の投稿と他人の投稿のオピニオンが表示される (FAILED - 37)[0m
+[31m      URLが正しい (FAILED - 22)[0m
+[32m      自分と他人の画像のリンク先が正しい[0m
+[31m      自分の投稿と他人の投稿のタイトルのリンク先がそれぞれ正しい (FAILED - 23)[0m
+[32m      自分の投稿と他人の投稿のオピニオンが表示される[0m
     サイドバーの確認
-[31m      自分の名前と紹介文が表示される (FAILED - 38)[0m
-[31m      自分のユーザ編集画面へのリンクが存在する (FAILED - 39)[0m
-[31m      「New book」と表示される (FAILED - 40)[0m
-[31m      titleフォームが表示される (FAILED - 41)[0m
-[31m      titleフォームに値が入っていない (FAILED - 42)[0m
-[31m      bodyフォームが表示される (FAILED - 43)[0m
-[31m      bodyフォームに値が入っていない (FAILED - 44)[0m
-[31m      Create Bookボタンが表示される (FAILED - 45)[0m
+[32m      自分の名前と紹介文が表示される[0m
+[31m      自分のユーザ編集画面へのリンクが存在する (FAILED - 24)[0m
+[31m      「New book」と表示される (FAILED - 25)[0m
+[32m      titleフォームが表示される[0m
+[32m      titleフォームに値が入っていない[0m
+[32m      bodyフォームが表示される[0m
+[32m      bodyフォームに値が入っていない[0m
+[32m      Create Bookボタンが表示される[0m
     投稿成功のテスト
-[31m      自分の新しい投稿が正しく保存される (FAILED - 46)[0m
-[31m      リダイレクト先が、保存できた投稿の詳細画面になっている (FAILED - 47)[0m
+[32m      自分の新しい投稿が正しく保存される[0m
+[31m      リダイレクト先が、保存できた投稿の詳細画面になっている (FAILED - 26)[0m
   自分の投稿詳細画面のテスト
     表示内容の確認
-[31m      URLが正しい (FAILED - 48)[0m
-[31m      「Book detail」と表示される (FAILED - 49)[0m
-[31m      ユーザ画像・名前のリンク先が正しい (FAILED - 50)[0m
-[31m      投稿のtitleが表示される (FAILED - 51)[0m
-[31m      投稿のbodyが表示される (FAILED - 52)[0m
-[31m      投稿の編集リンクが表示される (FAILED - 53)[0m
-[31m      投稿の削除リンクが表示される (FAILED - 54)[0m
+[31m      URLが正しい (FAILED - 27)[0m
+[31m      「Book detail」と表示される (FAILED - 28)[0m
+[32m      ユーザ画像・名前のリンク先が正しい[0m
+[32m      投稿のtitleが表示される[0m
+[32m      投稿のbodyが表示される[0m
+[31m      投稿の編集リンクが表示される (FAILED - 29)[0m
+[31m      投稿の削除リンクが表示される (FAILED - 30)[0m
     サイドバーの確認
-[31m      自分の名前と紹介文が表示される (FAILED - 55)[0m
-[31m      自分のユーザ編集画面へのリンクが存在する (FAILED - 56)[0m
-[31m      「New book」と表示される (FAILED - 57)[0m
-[31m      titleフォームが表示される (FAILED - 58)[0m
-[31m      titleフォームに値が入っていない (FAILED - 59)[0m
-[31m      bodyフォームが表示される (FAILED - 60)[0m
-[31m      bodyフォームに値が入っていない (FAILED - 61)[0m
-[31m      Create Bookボタンが表示される (FAILED - 62)[0m
+[32m      自分の名前と紹介文が表示される[0m
+[31m      自分のユーザ編集画面へのリンクが存在する (FAILED - 31)[0m
+[31m      「New book」と表示される (FAILED - 32)[0m
+[32m      titleフォームが表示される[0m
+[32m      titleフォームに値が入っていない[0m
+[32m      bodyフォームが表示される[0m
+[32m      bodyフォームに値が入っていない[0m
+[32m      Create Bookボタンが表示される[0m
     投稿成功のテスト
-[31m      自分の新しい投稿が正しく保存される (FAILED - 63)[0m
+[32m      自分の新しい投稿が正しく保存される[0m
     編集リンクのテスト
-[31m      編集画面に遷移する (FAILED - 64)[0m
+[31m      編集画面に遷移する (FAILED - 33)[0m
     削除リンクのテスト
-[31m      application.html.erbにjavascript_pack_tagを含んでいる (FAILED - 65)[0m
-[31m      正しく削除される (FAILED - 66)[0m
-[31m      リダイレクト先が、投稿一覧画面になっている (FAILED - 67)[0m
+[31m      application.html.erbにjavascript_pack_tagを含んでいる (FAILED - 34)[0m
+[31m      正しく削除される (FAILED - 35)[0m
+[31m      リダイレクト先が、投稿一覧画面になっている (FAILED - 36)[0m
   自分の投稿編集画面のテスト
     表示の確認
-[31m      URLが正しい (FAILED - 68)[0m
-[31m      「Editing Book」と表示される (FAILED - 69)[0m
-[31m      title編集フォームが表示される (FAILED - 70)[0m
-[31m      body編集フォームが表示される (FAILED - 71)[0m
-[31m      Update Bookボタンが表示される (FAILED - 72)[0m
-[31m      Showリンクが表示される (FAILED - 73)[0m
-[31m      Backリンクが表示される (FAILED - 74)[0m
+[31m      URLが正しい (FAILED - 37)[0m
+[32m      「Editing Book」と表示される[0m
+[32m      title編集フォームが表示される[0m
+[32m      body編集フォームが表示される[0m
+[32m      Update Bookボタンが表示される[0m
+[32m      Showリンクが表示される[0m
+[32m      Backリンクが表示される[0m
     編集成功のテスト
-[31m      titleが正しく更新される (FAILED - 75)[0m
-[31m      bodyが正しく更新される (FAILED - 76)[0m
-[31m      リダイレクト先が、更新した投稿の詳細画面になっている (FAILED - 77)[0m
+[32m      titleが正しく更新される[0m
+[32m      bodyが正しく更新される[0m
+[31m      リダイレクト先が、更新した投稿の詳細画面になっている (FAILED - 38)[0m
   ユーザ一覧画面のテスト
     表示内容の確認
-[31m      URLが正しい (FAILED - 78)[0m
-[31m      自分と他人の画像が表示される: fallbackの画像がサイドバーの1つ＋一覧(2人)の2つの計3つ存在する (FAILED - 79)[0m
-[31m      自分と他人の名前がそれぞれ表示される (FAILED - 80)[0m
-[31m      自分と他人のshowリンクがそれぞれ表示される (FAILED - 81)[0m
+[31m      URLが正しい (FAILED - 39)[0m
+[32m      自分と他人の画像が表示される: fallbackの画像がサイドバーの1つ＋一覧(2人)の2つの計3つ存在する[0m
+[32m      自分と他人の名前がそれぞれ表示される[0m
+[31m      自分と他人のshowリンクがそれぞれ表示される (FAILED - 40)[0m
     サイドバーの確認
-[31m      自分の名前と紹介文が表示される (FAILED - 82)[0m
-[31m      自分のユーザ編集画面へのリンクが存在する (FAILED - 83)[0m
-[31m      「New book」と表示される (FAILED - 84)[0m
-[31m      titleフォームが表示される (FAILED - 85)[0m
-[31m      titleフォームに値が入っていない (FAILED - 86)[0m
-[31m      bodyフォームが表示される (FAILED - 87)[0m
-[31m      bodyフォームに値が入っていない (FAILED - 88)[0m
-[31m      Create Bookボタンが表示される (FAILED - 89)[0m
+[32m      自分の名前と紹介文が表示される[0m
+[31m      自分のユーザ編集画面へのリンクが存在する (FAILED - 41)[0m
+[31m      「New book」と表示される (FAILED - 42)[0m
+[32m      titleフォームが表示される[0m
+[32m      titleフォームに値が入っていない[0m
+[32m      bodyフォームが表示される[0m
+[32m      bodyフォームに値が入っていない[0m
+[32m      Create Bookボタンが表示される[0m
   自分のユーザ詳細画面のテスト
     表示の確認
-[31m      URLが正しい (FAILED - 90)[0m
-[31m      投稿一覧のユーザ画像のリンク先が正しい (FAILED - 91)[0m
-[31m      投稿一覧に自分の投稿のtitleが表示され、リンクが正しい (FAILED - 92)[0m
-[31m      投稿一覧に自分の投稿のbodyが表示される (FAILED - 93)[0m
-[31m      他人の投稿は表示されない (FAILED - 94)[0m
+[31m      URLが正しい (FAILED - 43)[0m
+[32m      投稿一覧のユーザ画像のリンク先が正しい[0m
+[32m      投稿一覧に自分の投稿のtitleが表示され、リンクが正しい[0m
+[32m      投稿一覧に自分の投稿のbodyが表示される[0m
+[32m      他人の投稿は表示されない[0m
     サイドバーの確認
-[31m      自分の名前と紹介文が表示される (FAILED - 95)[0m
-[31m      自分のユーザ編集画面へのリンクが存在する (FAILED - 96)[0m
-[31m      「New book」と表示される (FAILED - 97)[0m
-[31m      titleフォームが表示される (FAILED - 98)[0m
-[31m      titleフォームに値が入っていない (FAILED - 99)[0m
-[31m      bodyフォームが表示される (FAILED - 100)[0m
-[31m      bodyフォームに値が入っていない (FAILED - 101)[0m
-[31m      Create Bookボタンが表示される (FAILED - 102)[0m
+[32m      自分の名前と紹介文が表示される[0m
+[31m      自分のユーザ編集画面へのリンクが存在する (FAILED - 44)[0m
+[31m      「New book」と表示される (FAILED - 45)[0m
+[32m      titleフォームが表示される[0m
+[32m      titleフォームに値が入っていない[0m
+[32m      bodyフォームが表示される[0m
+[32m      bodyフォームに値が入っていない[0m
+[32m      Create Bookボタンが表示される[0m
   自分のユーザ情報編集画面のテスト
     表示の確認
-[31m      URLが正しい (FAILED - 103)[0m
-[31m      名前編集フォームに自分の名前が表示される (FAILED - 104)[0m
-[31m      画像編集フォームが表示される (FAILED - 105)[0m
-[31m      自己紹介編集フォームに自分の自己紹介文が表示される (FAILED - 106)[0m
-[31m      Update Userボタンが表示される (FAILED - 107)[0m
+[31m      URLが正しい (FAILED - 46)[0m
+[32m      名前編集フォームに自分の名前が表示される[0m
+[32m      画像編集フォームが表示される[0m
+[32m      自己紹介編集フォームに自分の自己紹介文が表示される[0m
+[32m      Update Userボタンが表示される[0m
     更新成功のテスト
-[31m      nameが正しく更新される (FAILED - 108)[0m
-[31m      introductionが正しく更新される (FAILED - 109)[0m
-[31m      リダイレクト先が、自分のユーザ詳細画面になっている (FAILED - 110)[0m
+[32m      nameが正しく更新される[0m
+[32m      introductionが正しく更新される[0m
+[31m      リダイレクト先が、自分のユーザ詳細画面になっている (FAILED - 47)[0m
 
 [STEP3] 仕上げのテスト
   サクセスメッセージのテスト
-[31m    ユーザ新規登録成功時 (FAILED - 111)[0m
-[31m    ユーザログイン成功時 (FAILED - 112)[0m
-[31m    ユーザログアウト成功時 (FAILED - 113)[0m
-[31m    ユーザのプロフィール情報更新成功時 (FAILED - 114)[0m
-[31m    投稿データの新規投稿成功時: 投稿一覧画面から行います。 (FAILED - 115)[0m
-[31m    投稿データの更新成功時 (FAILED - 116)[0m
+[32m    ユーザ新規登録成功時[0m
+[32m    ユーザログイン成功時[0m
+[32m    ユーザログアウト成功時[0m
+[32m    ユーザのプロフィール情報更新成功時[0m
+[32m    投稿データの新規投稿成功時: 投稿一覧画面から行います。[0m
+[32m    投稿データの更新成功時[0m
   処理失敗時のテスト
     ユーザ新規登録失敗: nameを1文字にする
-[31m      新規登録されない (FAILED - 117)[0m
-[31m      新規登録画面を表示しており、フォームの内容が正しい (FAILED - 118)[0m
-[31m      バリデーションエラーが表示される (FAILED - 119)[0m
+[32m      新規登録されない[0m
+[32m      新規登録画面を表示しており、フォームの内容が正しい[0m
+[32m      バリデーションエラーが表示される[0m
     ユーザのプロフィール情報編集失敗: nameを1文字にする
-[31m      更新されない (FAILED - 120)[0m
-[31m      ユーザ編集画面を表示しており、フォームの内容が正しい (FAILED - 121)[0m
-[31m      バリデーションエラーが表示される (FAILED - 122)[0m
+[32m      更新されない[0m
+[32m      ユーザ編集画面を表示しており、フォームの内容が正しい[0m
+[31m      バリデーションエラーが表示される (FAILED - 48)[0m
     投稿データの新規投稿失敗: 投稿一覧画面から行い、titleを空にする
-[31m      投稿が保存されない (FAILED - 123)[0m
-[31m      投稿一覧画面を表示している (FAILED - 124)[0m
-[31m      新規投稿フォームの内容が正しい (FAILED - 125)[0m
-[31m      バリデーションエラーが表示される (FAILED - 126)[0m
+[32m      投稿が保存されない[0m
+[31m      投稿一覧画面を表示している (FAILED - 49)[0m
+[32m      新規投稿フォームの内容が正しい[0m
+[32m      バリデーションエラーが表示される[0m
     投稿データの更新失敗: titleを空にする
-[31m      投稿が更新されない (FAILED - 127)[0m
-[31m      投稿編集画面を表示しており、フォームの内容が正しい (FAILED - 128)[0m
-[31m      エラーメッセージが表示される (FAILED - 129)[0m
+[32m      投稿が更新されない[0m
+[31m      投稿編集画面を表示しており、フォームの内容が正しい (FAILED - 50)[0m
+[31m      エラーメッセージが表示される (FAILED - 51)[0m
   ログインしていない場合のアクセス制限のテスト: アクセスできず、ログイン画面に遷移する
-[31m    ユーザ一覧画面 (FAILED - 130)[0m
-[31m    ユーザ詳細画面 (FAILED - 131)[0m
-[31m    ユーザ情報編集画面 (FAILED - 132)[0m
-[31m    投稿一覧画面 (FAILED - 133)[0m
-[31m    投稿詳細画面 (FAILED - 134)[0m
-[31m    投稿編集画面 (FAILED - 135)[0m
+[31m    ユーザ一覧画面 (FAILED - 52)[0m
+[31m    ユーザ詳細画面 (FAILED - 53)[0m
+[31m    ユーザ情報編集画面 (FAILED - 54)[0m
+[31m    投稿一覧画面 (FAILED - 55)[0m
+[31m    投稿詳細画面 (FAILED - 56)[0m
+[31m    投稿編集画面 (FAILED - 57)[0m
   他人の画面のテスト
     他人の投稿詳細画面のテスト
       表示内容の確認
-[31m        URLが正しい (FAILED - 136)[0m
-[31m        「Book detail」と表示される (FAILED - 137)[0m
-[31m        ユーザ画像・名前のリンク先が正しい (FAILED - 138)[0m
-[31m        投稿のtitleが表示される (FAILED - 139)[0m
-[31m        投稿のopinionが表示される (FAILED - 140)[0m
-[31m        投稿の編集リンクが表示されない (FAILED - 141)[0m
-[31m        投稿の削除リンクが表示されない (FAILED - 142)[0m
+[31m        URLが正しい (FAILED - 58)[0m
+[31m        「Book detail」と表示される (FAILED - 59)[0m
+[32m        ユーザ画像・名前のリンク先が正しい[0m
+[32m        投稿のtitleが表示される[0m
+[32m        投稿のopinionが表示される[0m
+[32m        投稿の編集リンクが表示されない[0m
+[32m        投稿の削除リンクが表示されない[0m
       サイドバーの確認
-[31m        他人の名前と紹介文が表示される (FAILED - 143)[0m
-[31m        他人のユーザ編集画面へのリンクが存在する (FAILED - 144)[0m
-[31m        自分の名前と紹介文は表示されない (FAILED - 145)[0m
-[31m        自分のユーザ編集画面へのリンクは存在しない (FAILED - 146)[0m
+[32m        他人の名前と紹介文が表示される[0m
+[31m        他人のユーザ編集画面へのリンクが存在する (FAILED - 60)[0m
+[32m        自分の名前と紹介文は表示されない[0m
+[32m        自分のユーザ編集画面へのリンクは存在しない[0m
     他人の投稿編集画面
-[31m      遷移できず、投稿一覧画面にリダイレクトされる (FAILED - 147)[0m
+[31m      遷移できず、投稿一覧画面にリダイレクトされる (FAILED - 61)[0m
     他人のユーザ詳細画面のテスト
       表示の確認
-[31m        URLが正しい (FAILED - 148)[0m
-[31m        投稿一覧のユーザ画像のリンク先が正しい (FAILED - 149)[0m
-[31m        投稿一覧に他人の投稿のtitleが表示され、リンクが正しい (FAILED - 150)[0m
-[31m        投稿一覧に他人の投稿のopinionが表示される (FAILED - 151)[0m
-[31m        自分の投稿は表示されない (FAILED - 152)[0m
+[31m        URLが正しい (FAILED - 62)[0m
+[32m        投稿一覧のユーザ画像のリンク先が正しい[0m
+[32m        投稿一覧に他人の投稿のtitleが表示され、リンクが正しい[0m
+[32m        投稿一覧に他人の投稿のopinionが表示される[0m
+[32m        自分の投稿は表示されない[0m
       サイドバーの確認
-[31m        他人の名前と紹介文が表示される (FAILED - 153)[0m
-[31m        他人のユーザ編集画面へのリンクが存在する (FAILED - 154)[0m
-[31m        自分の名前と紹介文は表示されない (FAILED - 155)[0m
-[31m        自分のユーザ編集画面へのリンクは存在しない (FAILED - 156)[0m
+[32m        他人の名前と紹介文が表示される[0m
+[31m        他人のユーザ編集画面へのリンクが存在する (FAILED - 63)[0m
+[32m        自分の名前と紹介文は表示されない[0m
+[32m        自分のユーザ編集画面へのリンクは存在しない[0m
     他人のユーザ情報編集画面
-[31m      遷移できず、自分のユーザ詳細画面にリダイレクトされる (FAILED - 157)[0m
+[31m      遷移できず、自分のユーザ詳細画面にリダイレクトされる (FAILED - 64)[0m
   グリッドシステムのテスト: container, row, col-md-〇を正しく使えている
-[31m    ユーザ一覧画面 (FAILED - 158)[0m
-[31m    ユーザ詳細画面 (FAILED - 159)[0m
-[31m    投稿一覧画面 (FAILED - 160)[0m
-[31m    投稿詳細画面 (FAILED - 161)[0m
+[31m    ユーザ一覧画面 (FAILED - 65)[0m
+[31m    ユーザ詳細画面 (FAILED - 66)[0m
+[31m    投稿一覧画面 (FAILED - 67)[0m
+[31m    投稿詳細画面 (FAILED - 68)[0m
   アイコンのテスト
     トップ画面
-[31m      本のアイコンが表示される (FAILED - 162)[0m
+[32m      本のアイコンが表示される[0m
     アバウト画面
-[31m      本のアイコンが表示される (FAILED - 163)[0m
+[31m      本のアイコンが表示される (FAILED - 69)[0m
     ヘッダー: ログインしていない場合
-[31m      Homeリンクのアイコンが表示される (FAILED - 164)[0m
-[31m      Aboutリンクのアイコンが表示される (FAILED - 165)[0m
-[31m      Sign upリンクのアイコンが表示される (FAILED - 166)[0m
-[31m      Log inリンクのアイコンが表示される (FAILED - 167)[0m
+[32m      Homeリンクのアイコンが表示される[0m
+[32m      Aboutリンクのアイコンが表示される[0m
+[32m      Sign upリンクのアイコンが表示される[0m
+[32m      Log inリンクのアイコンが表示される[0m
     ヘッダー: ログインしている場合
-[31m      Homeリンクのアイコンが表示される (FAILED - 168)[0m
-[31m      Usersリンクのアイコンが表示される (FAILED - 169)[0m
-[31m      Booksリンクのアイコンが表示される (FAILED - 170)[0m
-[31m      Log outリンクのアイコンが表示される (FAILED - 171)[0m
+[32m      Homeリンクのアイコンが表示される[0m
+[32m      Usersリンクのアイコンが表示される[0m
+[32m      Booksリンクのアイコンが表示される[0m
+[32m      Log outリンクのアイコンが表示される[0m
     サイドバー
-[31m      ユーザ一覧画面でレンチアイコンが表示される (FAILED - 172)[0m
-[31m      ユーザ詳細画面でレンチアイコンが表示される (FAILED - 173)[0m
-[31m      投稿一覧画面でレンチアイコンが表示される (FAILED - 174)[0m
-[31m      投稿詳細画面でレンチアイコンが表示される (FAILED - 175)[0m
+[32m      ユーザ一覧画面でレンチアイコンが表示される[0m
+[32m      ユーザ詳細画面でレンチアイコンが表示される[0m
+[32m      投稿一覧画面でレンチアイコンが表示される[0m
+[32m      投稿詳細画面でレンチアイコンが表示される[0m
 
 Failures:
 
-  1) UsersController GET #edit ログインユーザーの場合 レスポンスが成功すること
-     [31mFailure/Error: let!(:user) { create(:user) }[0m
+  1) [STEP1] ユーザログイン前のテスト トップ画面のテスト 表示内容の確認 URLが正しい
+     [31mFailure/Error: expect(current_path).to eq '/'[0m
+     [31m[0m
+     [31m  expected: "/"[0m
+     [31m       got: "/bookers2"[0m
+     [31m[0m
+     [31m  (compared using ==)[0m
+     [36m# ./spec/system/01_before_login_spec.rb:11:in `block (4 levels) in <main>'[0m
+
+  2) [STEP1] ユーザログイン前のテスト トップ画面のテスト 表示内容の確認 Log inリンクが表示される: 青色のボタンの表示が「Log in」である
+     [31mFailure/Error: log_in_link = find_all('a')[5].text[0m
      [31m[0m
      [31mNoMethodError:[0m
-     [31m  undefined method `introduction=' for #<User id: nil, email: "forest@medhurst.test", name: "vcha9sqad6", created_at: nil, updated_at: nil>[0m
-     [36m# ./spec/controllers/users_controller_spec.rb:4:in `block (2 levels) in <top (required)>'[0m
+     [31m  undefined method `text' for nil:NilClass[0m
+     [31m[0m
+     [31m          log_in_link = find_all('a')[5].text[0m
+     [31m                                        ^^^^^[0m
+     [36m# ./spec/system/01_before_login_spec.rb:14:in `block (4 levels) in <main>'[0m
 
-  2) UsersController GET #edit ログインユーザーの場合 @userが正しく設定されていること
-     [31mFailure/Error: let!(:user) { create(:user) }[0m
+  3) [STEP1] ユーザログイン前のテスト トップ画面のテスト 表示内容の確認 Log inリンクの内容が正しい
+     [31mFailure/Error: log_in_link = find_all('a')[5].text[0m
      [31m[0m
      [31mNoMethodError:[0m
-     [31m  undefined method `introduction=' for #<User id: nil, email: "barrie.kuhn@veum.test", name: "ql0pqofndu", created_at: nil, updated_at: nil>[0m
-     [36m# ./spec/controllers/users_controller_spec.rb:4:in `block (2 levels) in <top (required)>'[0m
+     [31m  undefined method `text' for nil:NilClass[0m
+     [31m[0m
+     [31m          log_in_link = find_all('a')[5].text[0m
+     [31m                                        ^^^^^[0m
+     [36m# ./spec/system/01_before_login_spec.rb:18:in `block (4 levels) in <main>'[0m
 
-  3) Bookモデルのテスト バリデーションのテスト titleカラム 空欄でないこと
-     [31mFailure/Error: let(:user) { create(:user) }[0m
+  4) [STEP1] ユーザログイン前のテスト トップ画面のテスト 表示内容の確認 Sign upリンクが表示される: 緑色のボタンの表示が「Sign up」である
+     [31mFailure/Error: sign_up_link = find_all('a')[6].text[0m
      [31m[0m
      [31mNoMethodError:[0m
-     [31m  undefined method `introduction=' for #<User id: nil, email: "ozie_lockman@gibson.test", name: "ptlxxglu6x", created_at: nil, updated_at: nil>[0m
-     [36m# ./spec/models/book_spec.rb:7:in `block (3 levels) in <main>'[0m
-     [36m# ./spec/models/book_spec.rb:8:in `block (3 levels) in <main>'[0m
+     [31m  undefined method `text' for nil:NilClass[0m
+     [31m[0m
+     [31m          sign_up_link = find_all('a')[6].text[0m
+     [31m                                         ^^^^^[0m
+     [36m# ./spec/system/01_before_login_spec.rb:22:in `block (4 levels) in <main>'[0m
 
-  4) Bookモデルのテスト バリデーションのテスト bodyカラム 空欄でないこと
-     [31mFailure/Error: let(:user) { create(:user) }[0m
+  5) [STEP1] ユーザログイン前のテスト トップ画面のテスト 表示内容の確認 Sign upリンクの内容が正しい
+     [31mFailure/Error: sign_up_link = find_all('a')[6].text[0m
      [31m[0m
      [31mNoMethodError:[0m
-     [31m  undefined method `introduction=' for #<User id: nil, email: "adrian_kshlerin@harvey.example", name: "30e519vhtr", created_at: nil, updated_at: nil>[0m
-     [36m# ./spec/models/book_spec.rb:7:in `block (3 levels) in <main>'[0m
-     [36m# ./spec/models/book_spec.rb:8:in `block (3 levels) in <main>'[0m
-
-  5) Bookモデルのテスト バリデーションのテスト bodyカラム 200文字以下であること: 200文字は〇
-     [31mFailure/Error: let(:user) { create(:user) }[0m
+     [31m  undefined method `text' for nil:NilClass[0m
      [31m[0m
-     [31mNoMethodError:[0m
-     [31m  undefined method `introduction=' for #<User id: nil, email: "pat.pollich@ankunding.test", name: "bwi30ccqcx", created_at: nil, updated_at: nil>[0m
-     [36m# ./spec/models/book_spec.rb:7:in `block (3 levels) in <main>'[0m
-     [36m# ./spec/models/book_spec.rb:8:in `block (3 levels) in <main>'[0m
+     [31m          sign_up_link = find_all('a')[6].text[0m
+     [31m                                         ^^^^^[0m
+     [36m# ./spec/system/01_before_login_spec.rb:26:in `block (4 levels) in <main>'[0m
 
-  6) Bookモデルのテスト バリデーションのテスト bodyカラム 200文字以下であること: 201文字は×
-     [31mFailure/Error: let(:user) { create(:user) }[0m
+  6) [STEP1] ユーザログイン前のテスト アバウト画面のテスト 表示内容の確認 URLが正しい
+     [31mFailure/Error: visit '/home/about'[0m
      [31m[0m
-     [31mNoMethodError:[0m
-     [31m  undefined method `introduction=' for #<User id: nil, email: "julian@cole.test", name: "ktofxehpmr", created_at: nil, updated_at: nil>[0m
-     [36m# ./spec/models/book_spec.rb:7:in `block (3 levels) in <main>'[0m
-     [36m# ./spec/models/book_spec.rb:8:in `block (3 levels) in <main>'[0m
+     [31mActionController::RoutingError:[0m
+     [31m  No route matches [GET] "/home/about"[0m
+     [36m# ./spec/system/01_before_login_spec.rb:34:in `block (3 levels) in <main>'[0m
 
-  7) Userモデルのテスト バリデーションのテスト nameカラム 空欄でないこと
-     [31mFailure/Error: let!(:other_user) { create(:user) }[0m
+  7) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 リンクの内容を確認 Bookersを押すと、トップ画面に遷移する
+     [31mFailure/Error: is_expected.to eq '/'[0m
      [31m[0m
-     [31mNoMethodError:[0m
-     [31m  undefined method `introduction=' for #<User id: nil, email: "thalia@mueller.test", name: "garxf4icij", created_at: nil, updated_at: nil>[0m
-     [36m# ./spec/models/user_spec.rb:7:in `block (3 levels) in <main>'[0m
-
-  8) Userモデルのテスト バリデーションのテスト nameカラム 2文字以上であること: 1文字は×
-     [31mFailure/Error: let!(:other_user) { create(:user) }[0m
+     [31m  expected: "/"[0m
+     [31m       got: "/bookers2"[0m
      [31m[0m
-     [31mNoMethodError:[0m
-     [31m  undefined method `introduction=' for #<User id: nil, email: "caitlyn@padberg.example", name: "2gsh1kk4dl", created_at: nil, updated_at: nil>[0m
-     [36m# ./spec/models/user_spec.rb:7:in `block (3 levels) in <main>'[0m
+     [31m  (compared using ==)[0m
+     [36m# ./spec/system/01_before_login_spec.rb:80:in `block (4 levels) in <main>'[0m
 
-  9) Userモデルのテスト バリデーションのテスト nameカラム 2文字以上であること: 2文字は〇
-     [31mFailure/Error: let!(:other_user) { create(:user) }[0m
+  8) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 リンクの内容を確認 Homeを押すと、トップ画面に遷移する
+     [31mFailure/Error: is_expected.to eq '/'[0m
      [31m[0m
-     [31mNoMethodError:[0m
-     [31m  undefined method `introduction=' for #<User id: nil, email: "hermine_bogan@hauck.example", name: "0zdpuwdctv", created_at: nil, updated_at: nil>[0m
-     [36m# ./spec/models/user_spec.rb:7:in `block (3 levels) in <main>'[0m
+     [31m  expected: "/"[0m
+     [31m       got: "/bookers2"[0m
+     [31m[0m
+     [31m  (compared using ==)[0m
+     [36m# ./spec/system/01_before_login_spec.rb:87:in `block (4 levels) in <main>'[0m
 
-  10) Userモデルのテスト バリデーションのテスト nameカラム 20文字以下であること: 20文字は〇
-      [31mFailure/Error: let!(:other_user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "sindy_hettinger@lowe.test", name: "3bu5ip2uis", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/models/user_spec.rb:7:in `block (3 levels) in <main>'[0m
+  9) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 リンクの内容を確認 Aboutを押すと、アバウト画面に遷移する
+     [31mFailure/Error: is_expected.to eq '/home/about'[0m
+     [31m[0m
+     [31m  expected: "/home/about"[0m
+     [31m       got: "/bookers2/about"[0m
+     [31m[0m
+     [31m  (compared using ==)[0m
+     [36m# ./spec/system/01_before_login_spec.rb:93:in `block (4 levels) in <main>'[0m
 
-  11) Userモデルのテスト バリデーションのテスト nameカラム 20文字以下であること: 21文字は×
-      [31mFailure/Error: let!(:other_user) { create(:user) }[0m
+  10) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 リンクの内容を確認 Sign upを押すと、新規登録画面に遷移する
+      [31mFailure/Error: is_expected.to eq '/users/sign_up'[0m
       [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "alena@bahringer.example", name: "wwtgx6hit5", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/models/user_spec.rb:7:in `block (3 levels) in <main>'[0m
+      [31m  expected: "/users/sign_up"[0m
+      [31m       got: "/bookers2/users/sign_up"[0m
+      [31m[0m
+      [31m  (compared using ==)[0m
+      [36m# ./spec/system/01_before_login_spec.rb:99:in `block (4 levels) in <main>'[0m
 
-  12) Userモデルのテスト バリデーションのテスト nameカラム 一意性があること
-      [31mFailure/Error: let!(:other_user) { create(:user) }[0m
+  11) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 リンクの内容を確認 Log inを押すと、ログイン画面に遷移する
+      [31mFailure/Error: is_expected.to eq '/users/sign_in'[0m
       [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "carson@nitzsche-heidenreich.example", name: "wd0xyopj4v", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/models/user_spec.rb:7:in `block (3 levels) in <main>'[0m
+      [31m  expected: "/users/sign_in"[0m
+      [31m       got: "/bookers2/users/sign_in"[0m
+      [31m[0m
+      [31m  (compared using ==)[0m
+      [36m# ./spec/system/01_before_login_spec.rb:105:in `block (4 levels) in <main>'[0m
 
-  13) Userモデルのテスト バリデーションのテスト introductionカラム 50文字以下であること: 50文字は〇
-      [31mFailure/Error: let!(:other_user) { create(:user) }[0m
+  12) [STEP1] ユーザログイン前のテスト ユーザ新規登録のテスト 表示内容の確認 URLが正しい
+      [31mFailure/Error: expect(current_path).to eq '/users/sign_up'[0m
       [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "emelina_krajcik@batz.example", name: "3xtd6bhx7v", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/models/user_spec.rb:7:in `block (3 levels) in <main>'[0m
+      [31m  expected: "/users/sign_up"[0m
+      [31m       got: "/bookers2/users/sign_up"[0m
+      [31m[0m
+      [31m  (compared using ==)[0m
+      [36m# ./spec/system/01_before_login_spec.rb:117:in `block (4 levels) in <main>'[0m
 
-  14) Userモデルのテスト バリデーションのテスト introductionカラム 50文字以下であること: 51文字は×
-      [31mFailure/Error: let!(:other_user) { create(:user) }[0m
+  13) [STEP1] ユーザログイン前のテスト ユーザ新規登録のテスト 新規登録成功のテスト 新規登録後のリダイレクト先が、新規登録できたユーザの詳細画面になっている
+      [31mFailure/Error: expect(current_path).to eq '/users/' + User.last.id.to_s[0m
       [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "conception_kuvalis@wisozk.example", name: "ew4b747qia", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/models/user_spec.rb:7:in `block (3 levels) in <main>'[0m
+      [31m  expected: "/users/1"[0m
+      [31m       got: "/bookers2/users/1"[0m
+      [31m[0m
+      [31m  (compared using ==)[0m
+      [36m# ./spec/system/01_before_login_spec.rb:152:in `block (4 levels) in <main>'[0m
 
-  15) [STEP1] ユーザログイン前のテスト トップ画面のテスト 表示内容の確認 Log inリンクが表示される: 青色のボタンの表示が「Log in」である
-      [31mFailure/Error: log_in_link = find_all('a')[5].text[0m
+  14) [STEP1] ユーザログイン前のテスト ユーザログイン 表示内容の確認 URLが正しい
+      [31mFailure/Error: expect(current_path).to eq '/users/sign_in'[0m
       [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `text' for nil:NilClass[0m
+      [31m  expected: "/users/sign_in"[0m
+      [31m       got: "/bookers2/users/sign_in"[0m
       [31m[0m
-      [31m          log_in_link = find_all('a')[5].text[0m
-      [31m                                        ^^^^^[0m
-      [36m# ./spec/system/01_before_login_spec.rb:14:in `block (4 levels) in <main>'[0m
+      [31m  (compared using ==)[0m
+      [36m# ./spec/system/01_before_login_spec.rb:166:in `block (4 levels) in <main>'[0m
 
-  16) [STEP1] ユーザログイン前のテスト トップ画面のテスト 表示内容の確認 Log inリンクの内容が正しい
-      [31mFailure/Error: log_in_link = find_all('a')[5].text[0m
+  15) [STEP1] ユーザログイン前のテスト ユーザログイン ログイン成功のテスト ログイン後のリダイレクト先が、ログインしたユーザの詳細画面になっている
+      [31mFailure/Error: expect(current_path).to eq '/users/' + user.id.to_s[0m
       [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `text' for nil:NilClass[0m
+      [31m  expected: "/users/1"[0m
+      [31m       got: "/bookers2/users/1"[0m
       [31m[0m
-      [31m          log_in_link = find_all('a')[5].text[0m
-      [31m                                        ^^^^^[0m
-      [36m# ./spec/system/01_before_login_spec.rb:18:in `block (4 levels) in <main>'[0m
+      [31m  (compared using ==)[0m
+      [36m# ./spec/system/01_before_login_spec.rb:193:in `block (4 levels) in <main>'[0m
 
-  17) [STEP1] ユーザログイン前のテスト トップ画面のテスト 表示内容の確認 Sign upリンクが表示される: 緑色のボタンの表示が「Sign up」である
-      [31mFailure/Error: sign_up_link = find_all('a')[6].text[0m
+  16) [STEP1] ユーザログイン前のテスト ユーザログイン ログイン失敗のテスト ログインに失敗し、ログイン画面にリダイレクトされる
+      [31mFailure/Error: expect(current_path).to eq '/users/sign_in'[0m
       [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `text' for nil:NilClass[0m
+      [31m  expected: "/users/sign_in"[0m
+      [31m       got: "/bookers2/users/sign_in"[0m
       [31m[0m
-      [31m          sign_up_link = find_all('a')[6].text[0m
-      [31m                                         ^^^^^[0m
-      [36m# ./spec/system/01_before_login_spec.rb:22:in `block (4 levels) in <main>'[0m
+      [31m  (compared using ==)[0m
+      [36m# ./spec/system/01_before_login_spec.rb:205:in `block (4 levels) in <main>'[0m
 
-  18) [STEP1] ユーザログイン前のテスト トップ画面のテスト 表示内容の確認 Sign upリンクの内容が正しい
-      [31mFailure/Error: sign_up_link = find_all('a')[6].text[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `text' for nil:NilClass[0m
-      [31m[0m
-      [31m          sign_up_link = find_all('a')[6].text[0m
-      [31m                                         ^^^^^[0m
-      [36m# ./spec/system/01_before_login_spec.rb:26:in `block (4 levels) in <main>'[0m
+  17) [STEP1] ユーザログイン前のテスト ユーザログアウトのテスト ログアウト機能のテスト 正しくログアウトできている: ログアウト後のリダイレクト先においてAbout画面へのリンクが存在する
+      [31mFailure/Error: expect(page).to have_link '', href: '/home/about'[0m
+      [31m  expected to find link "" with href "/home/about" but there were no matches[0m
+      [36m# ./spec/system/01_before_login_spec.rb:259:in `block (4 levels) in <main>'[0m
 
-  19) [STEP1] ユーザログイン前のテスト アバウト画面のテスト 表示内容の確認 URLが正しい
+  18) [STEP1] ユーザログイン前のテスト ユーザログアウトのテスト ログアウト機能のテスト ログアウト後のリダイレクト先が、トップになっている
+      [31mFailure/Error: expect(current_path).to eq '/'[0m
+      [31m[0m
+      [31m  expected: "/"[0m
+      [31m       got: "/bookers2"[0m
+      [31m[0m
+      [31m  (compared using ==)[0m
+      [36m# ./spec/system/01_before_login_spec.rb:262:in `block (4 levels) in <main>'[0m
+
+  19) [STEP2] ユーザログイン後のテスト ヘッダーのテスト: ログインしている場合 リンクの内容を確認: ※logoutは『ユーザログアウトのテスト』でテスト済みになります。 Homeを押すと、自分のユーザ詳細画面に遷移する
+      [31mFailure/Error: is_expected.to eq '/users/' + user.id.to_s[0m
+      [31m[0m
+      [31m  expected: "/users/1"[0m
+      [31m       got: "/bookers2/users/1"[0m
+      [31m[0m
+      [31m  (compared using ==)[0m
+      [36m# ./spec/system/02_after_login_spec.rb:24:in `block (4 levels) in <main>'[0m
+
+  20) [STEP2] ユーザログイン後のテスト ヘッダーのテスト: ログインしている場合 リンクの内容を確認: ※logoutは『ユーザログアウトのテスト』でテスト済みになります。 Usersを押すと、ユーザ一覧画面に遷移する
+      [31mFailure/Error: is_expected.to eq '/users'[0m
+      [31m[0m
+      [31m  expected: "/users"[0m
+      [31m       got: "/bookers2/users"[0m
+      [31m[0m
+      [31m  (compared using ==)[0m
+      [36m# ./spec/system/02_after_login_spec.rb:30:in `block (4 levels) in <main>'[0m
+
+  21) [STEP2] ユーザログイン後のテスト ヘッダーのテスト: ログインしている場合 リンクの内容を確認: ※logoutは『ユーザログアウトのテスト』でテスト済みになります。 Booksを押すと、投稿一覧画面に遷移する
+      [31mFailure/Error: is_expected.to eq '/books'[0m
+      [31m[0m
+      [31m  expected: "/books"[0m
+      [31m       got: "/bookers2/books"[0m
+      [31m[0m
+      [31m  (compared using ==)[0m
+      [36m# ./spec/system/02_after_login_spec.rb:36:in `block (4 levels) in <main>'[0m
+
+  22) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 表示内容の確認 URLが正しい
+      [31mFailure/Error: expect(current_path).to eq '/books'[0m
+      [31m[0m
+      [31m  expected: "/books"[0m
+      [31m       got: "/bookers2/books"[0m
+      [31m[0m
+      [31m  (compared using ==)[0m
+      [36m# ./spec/system/02_after_login_spec.rb:48:in `block (4 levels) in <main>'[0m
+
+  23) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 表示内容の確認 自分の投稿と他人の投稿のタイトルのリンク先がそれぞれ正しい
+      [31mFailure/Error: expect(page).to have_link book.title, href: book_path(book)[0m
+      [31m  expected to find link "2zifv" with href "/bookers2/books/1" but there were no matches[0m
+      [36m# ./spec/system/02_after_login_spec.rb:55:in `block (4 levels) in <main>'[0m
+
+  24) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクが存在する
+      [31mFailure/Error: expect(page).to have_link '', href: edit_user_path(user)[0m
+      [31m  expected to find link "" with href "/bookers2/users/1/edit" but there were no matches[0m
+      [36m# ./spec/system/02_after_login_spec.rb:70:in `block (4 levels) in <main>'[0m
+
+  25) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 「New book」と表示される
+      [31mFailure/Error: expect(page).to have_content 'New book'[0m
+      [31m  expected to find text "New book" in "Bookers\nHome Users Books Log out\nUser info\nname\no5iajdr6hq\nintroduction\njeg9m4dsco3x4sr97zpm\nNEW book\nTitle\nOpinion\nBooks\nTitle\nOpinion\nBook\n8yhkmdo117k9crauhmme\nBook\nch48u9bogmms5u79fpjh\nCopyRight Infratop.inc". (However, it was found 1 time using a case insensitive search.)[0m
+      [36m# ./spec/system/02_after_login_spec.rb:73:in `block (4 levels) in <main>'[0m
+
+  26) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 投稿成功のテスト リダイレクト先が、保存できた投稿の詳細画面になっている
+      [31mFailure/Error: expect(current_path).to eq '/books/' + Book.last.id.to_s[0m
+      [31m[0m
+      [31m  expected: "/books/3"[0m
+      [31m       got: "/bookers2/books/3"[0m
+      [31m[0m
+      [31m  (compared using ==)[0m
+      [36m# ./spec/system/02_after_login_spec.rb:103:in `block (4 levels) in <main>'[0m
+
+  27) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 URLが正しい
+      [31mFailure/Error: expect(current_path).to eq '/books/' + book.id.to_s[0m
+      [31m[0m
+      [31m  expected: "/books/1"[0m
+      [31m       got: "/bookers2/books/1"[0m
+      [31m[0m
+      [31m  (compared using ==)[0m
+      [36m# ./spec/system/02_after_login_spec.rb:115:in `block (4 levels) in <main>'[0m
+
+  28) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 「Book detail」と表示される
+      [31mFailure/Error: expect(page).to have_content 'Book detail'[0m
+      [31m  expected to find text "Book detail" in "Bookers\nHome Users Books Log out\nUser info\nname\nqvwdtai4ej\nintroduction\ncsf8icyzl1ug3jyu6z3q\nNEW book\nTitle\nOpinion\nBooks detail\nqvwdtai4ej\n824h5\nxek2ixq8cntgz3cq6hip\nCopyRight Infratop.inc"[0m
+      [36m# ./spec/system/02_after_login_spec.rb:118:in `block (4 levels) in <main>'[0m
+
+  29) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 投稿の編集リンクが表示される
+      [31mFailure/Error: expect(page).to have_link 'Edit', href: edit_book_path(book)[0m
+      [31m  expected to find link "Edit" with href "/bookers2/books/1/edit" but there were no matches[0m
+      [36m# ./spec/system/02_after_login_spec.rb:130:in `block (4 levels) in <main>'[0m
+
+  30) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 投稿の削除リンクが表示される
+      [31mFailure/Error: expect(page).to have_link 'Destroy', href: book_path(book)[0m
+      [31m  expected to find link "Destroy" with href "/bookers2/books/1" but there were no matches[0m
+      [36m# ./spec/system/02_after_login_spec.rb:133:in `block (4 levels) in <main>'[0m
+
+  31) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクが存在する
+      [31mFailure/Error: expect(page).to have_link '', href: edit_user_path(user)[0m
+      [31m  expected to find link "" with href "/bookers2/users/1/edit" but there were no matches[0m
+      [36m# ./spec/system/02_after_login_spec.rb:143:in `block (4 levels) in <main>'[0m
+
+  32) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 「New book」と表示される
+      [31mFailure/Error: expect(page).to have_content 'New book'[0m
+      [31m  expected to find text "New book" in "Bookers\nHome Users Books Log out\nUser info\nname\nzle1nz2cvc\nintroduction\nwlr6tbu41r974pp8wkk2\nNEW book\nTitle\nOpinion\nBooks detail\nzle1nz2cvc\n8lioi\neernd0tvjtwh7j8nwdav\nCopyRight Infratop.inc". (However, it was found 1 time using a case insensitive search.)[0m
+      [36m# ./spec/system/02_after_login_spec.rb:146:in `block (4 levels) in <main>'[0m
+
+  33) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 編集リンクのテスト 編集画面に遷移する
+      [31mFailure/Error: click_link 'Edit'[0m
+      [31m[0m
+      [31mCapybara::ElementNotFound:[0m
+      [31m  Unable to find link "Edit"[0m
+      [36m# ./spec/system/02_after_login_spec.rb:183:in `block (4 levels) in <main>'[0m
+
+  34) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 削除リンクのテスト application.html.erbにjavascript_pack_tagを含んでいる
+      [31mFailure/Error: click_link 'Destroy'[0m
+      [31m[0m
+      [31mCapybara::ElementNotFound:[0m
+      [31m  Unable to find link "Destroy"[0m
+      [36m# ./spec/system/02_after_login_spec.rb:201:in `block (4 levels) in <main>'[0m
+
+  35) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 削除リンクのテスト 正しく削除される
+      [31mFailure/Error: click_link 'Destroy'[0m
+      [31m[0m
+      [31mCapybara::ElementNotFound:[0m
+      [31m  Unable to find link "Destroy"[0m
+      [36m# ./spec/system/02_after_login_spec.rb:201:in `block (4 levels) in <main>'[0m
+
+  36) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 削除リンクのテスト リダイレクト先が、投稿一覧画面になっている
+      [31mFailure/Error: click_link 'Destroy'[0m
+      [31m[0m
+      [31mCapybara::ElementNotFound:[0m
+      [31m  Unable to find link "Destroy"[0m
+      [36m# ./spec/system/02_after_login_spec.rb:201:in `block (4 levels) in <main>'[0m
+
+  37) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 URLが正しい
+      [31mFailure/Error: expect(current_path).to eq '/books/' + book.id.to_s + '/edit'[0m
+      [31m[0m
+      [31m  expected: "/books/1/edit"[0m
+      [31m       got: "/bookers2/books/1/edit"[0m
+      [31m[0m
+      [31m  (compared using ==)[0m
+      [36m# ./spec/system/02_after_login_spec.rb:219:in `block (4 levels) in <main>'[0m
+
+  38) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 編集成功のテスト リダイレクト先が、更新した投稿の詳細画面になっている
+      [31mFailure/Error: expect(current_path).to eq '/books/' + book.id.to_s[0m
+      [31m[0m
+      [31m  expected: "/books/1"[0m
+      [31m       got: "/bookers2/books/1"[0m
+      [31m[0m
+      [31m  (compared using ==)[0m
+      [36m# ./spec/system/02_after_login_spec.rb:257:in `block (4 levels) in <main>'[0m
+
+  39) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト 表示内容の確認 URLが正しい
+      [31mFailure/Error: expect(current_path).to eq '/users'[0m
+      [31m[0m
+      [31m  expected: "/users"[0m
+      [31m       got: "/bookers2/users"[0m
+      [31m[0m
+      [31m  (compared using ==)[0m
+      [36m# ./spec/system/02_after_login_spec.rb:270:in `block (4 levels) in <main>'[0m
+
+  40) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト 表示内容の確認 自分と他人のshowリンクがそれぞれ表示される
+      [31mFailure/Error: expect(page).to have_link 'Show', href: user_path(user)[0m
+      [31m  expected to find link "Show" with href "/bookers2/users/1" but there were no matches[0m
+      [36m# ./spec/system/02_after_login_spec.rb:280:in `block (4 levels) in <main>'[0m
+
+  41) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクが存在する
+      [31mFailure/Error: expect(page).to have_link '', href: edit_user_path(user)[0m
+      [31m  expected to find link "" with href "/bookers2/users/1/edit" but there were no matches[0m
+      [36m# ./spec/system/02_after_login_spec.rb:291:in `block (4 levels) in <main>'[0m
+
+  42) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 「New book」と表示される
+      [31mFailure/Error: expect(page).to have_content 'New book'[0m
+      [31m  expected to find text "New book" in "Bookers\nHome Users Books Log out\nUser info\nname\n7nodlfbkux\nintroduction\n0x1tukqm81crjk1ms7dh\nNEW book\nTitle\nOpinion\nUsers\nimage\nname\n7nodlfbkux\nshow\nwilac1dyef\nshow\nCopyRight Infratop.inc". (However, it was found 1 time using a case insensitive search.)[0m
+      [36m# ./spec/system/02_after_login_spec.rb:294:in `block (4 levels) in <main>'[0m
+
+  43) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト 表示の確認 URLが正しい
+      [31mFailure/Error: expect(current_path).to eq '/users/' + user.id.to_s[0m
+      [31m[0m
+      [31m  expected: "/users/1"[0m
+      [31m       got: "/bookers2/users/1"[0m
+      [31m[0m
+      [31m  (compared using ==)[0m
+      [36m# ./spec/system/02_after_login_spec.rb:321:in `block (4 levels) in <main>'[0m
+
+  44) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクが存在する
+      [31mFailure/Error: expect(page).to have_link '', href: edit_user_path(user)[0m
+      [31m  expected to find link "" with href "/bookers2/users/1/edit" but there were no matches[0m
+      [36m# ./spec/system/02_after_login_spec.rb:345:in `block (4 levels) in <main>'[0m
+
+  45) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 「New book」と表示される
+      [31mFailure/Error: expect(page).to have_content 'New book'[0m
+      [31m  expected to find text "New book" in "Bookers\nHome Users Books Log out\nUser info\nname\nl9fqb6142d\nintroduction\np84nw5m1es0640m5eh9g\nNEW book\nTitle\nOpinion\nBooks\nTitle\nOpinion\n7c0nq\nz8th7sw6gpyp6yw281x6\nCopyRight Infratop.inc". (However, it was found 1 time using a case insensitive search.)[0m
+      [36m# ./spec/system/02_after_login_spec.rb:348:in `block (4 levels) in <main>'[0m
+
+  46) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 URLが正しい
+      [31mFailure/Error: expect(current_path).to eq '/users/' + user.id.to_s + '/edit'[0m
+      [31m[0m
+      [31m  expected: "/users/1/edit"[0m
+      [31m       got: "/bookers2/users/1/edit"[0m
+      [31m[0m
+      [31m  (compared using ==)[0m
+      [36m# ./spec/system/02_after_login_spec.rb:375:in `block (4 levels) in <main>'[0m
+
+  47) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 更新成功のテスト リダイレクト先が、自分のユーザ詳細画面になっている
+      [31mFailure/Error: expect(current_path).to eq '/users/' + user.id.to_s[0m
+      [31m[0m
+      [31m  expected: "/users/1"[0m
+      [31m       got: "/bookers2/users/1"[0m
+      [31m[0m
+      [31m  (compared using ==)[0m
+      [36m# ./spec/system/02_after_login_spec.rb:409:in `block (4 levels) in <main>'[0m
+
+  48) [STEP3] 仕上げのテスト 処理失敗時のテスト ユーザのプロフィール情報編集失敗: nameを1文字にする バリデーションエラーが表示される
+      [31mFailure/Error: expect(page).to have_content "is too short (minimum is 2 characters)"[0m
+      [31m  expected to find text "is too short (minimum is 2 characters)" in "Bookers\nHome Users Books Log out\nUser info\nName\nImage\nIntroduction\n5qql6wslas8fmuyxho54\nCopyRight Infratop.inc"[0m
+      [36m# ./spec/system/03_finishing_touches_spec.rb:116:in `block (4 levels) in <main>'[0m
+
+  49) [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの新規投稿失敗: 投稿一覧画面から行い、titleを空にする 投稿一覧画面を表示している
+      [31mFailure/Error: expect(current_path).to eq '/books'[0m
+      [31m[0m
+      [31m  expected: "/books"[0m
+      [31m       got: "/bookers2/books"[0m
+      [31m[0m
+      [31m  (compared using ==)[0m
+      [36m# ./spec/system/03_finishing_touches_spec.rb:136:in `block (4 levels) in <main>'[0m
+
+  50) [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの更新失敗: titleを空にする 投稿編集画面を表示しており、フォームの内容が正しい
+      [31mFailure/Error: expect(current_path).to eq '/books/' + book.id.to_s[0m
+      [31m[0m
+      [31m  expected: "/books/1"[0m
+      [31m       got: "/bookers2/books/1"[0m
+      [31m[0m
+      [31m  (compared using ==)[0m
+      [36m# ./spec/system/03_finishing_touches_spec.rb:166:in `block (4 levels) in <main>'[0m
+
+  51) [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの更新失敗: titleを空にする エラーメッセージが表示される
+      [31mFailure/Error: expect(page).to have_content 'error'[0m
+      [31m  expected to find text "error" in "Bookers\nHome Users Books Log out\nEditing Book\nTitle\nOpinion kz2bsz9vr0rhov9lrp41\nShow\n|\nBack\nCopyRight Infratop.inc"[0m
+      [36m# ./spec/system/03_finishing_touches_spec.rb:171:in `block (4 levels) in <main>'[0m
+
+  52) [STEP3] 仕上げのテスト ログインしていない場合のアクセス制限のテスト: アクセスできず、ログイン画面に遷移する ユーザ一覧画面
+      [31mFailure/Error: is_expected.to eq '/users/sign_in'[0m
+      [31m[0m
+      [31m  expected: "/users/sign_in"[0m
+      [31m       got: "/bookers2/users/sign_in"[0m
+      [31m[0m
+      [31m  (compared using ==)[0m
+      [36m# ./spec/system/03_finishing_touches_spec.rb:181:in `block (3 levels) in <main>'[0m
+
+  53) [STEP3] 仕上げのテスト ログインしていない場合のアクセス制限のテスト: アクセスできず、ログイン画面に遷移する ユーザ詳細画面
+      [31mFailure/Error: is_expected.to eq '/users/sign_in'[0m
+      [31m[0m
+      [31m  expected: "/users/sign_in"[0m
+      [31m       got: "/bookers2/users/sign_in"[0m
+      [31m[0m
+      [31m  (compared using ==)[0m
+      [36m# ./spec/system/03_finishing_touches_spec.rb:185:in `block (3 levels) in <main>'[0m
+
+  54) [STEP3] 仕上げのテスト ログインしていない場合のアクセス制限のテスト: アクセスできず、ログイン画面に遷移する ユーザ情報編集画面
+      [31mFailure/Error: is_expected.to eq '/users/sign_in'[0m
+      [31m[0m
+      [31m  expected: "/users/sign_in"[0m
+      [31m       got: "/bookers2/users/sign_in"[0m
+      [31m[0m
+      [31m  (compared using ==)[0m
+      [36m# ./spec/system/03_finishing_touches_spec.rb:189:in `block (3 levels) in <main>'[0m
+
+  55) [STEP3] 仕上げのテスト ログインしていない場合のアクセス制限のテスト: アクセスできず、ログイン画面に遷移する 投稿一覧画面
+      [31mFailure/Error: is_expected.to eq '/users/sign_in'[0m
+      [31m[0m
+      [31m  expected: "/users/sign_in"[0m
+      [31m       got: "/bookers2/users/sign_in"[0m
+      [31m[0m
+      [31m  (compared using ==)[0m
+      [36m# ./spec/system/03_finishing_touches_spec.rb:193:in `block (3 levels) in <main>'[0m
+
+  56) [STEP3] 仕上げのテスト ログインしていない場合のアクセス制限のテスト: アクセスできず、ログイン画面に遷移する 投稿詳細画面
+      [31mFailure/Error: is_expected.to eq '/users/sign_in'[0m
+      [31m[0m
+      [31m  expected: "/users/sign_in"[0m
+      [31m       got: "/bookers2/users/sign_in"[0m
+      [31m[0m
+      [31m  (compared using ==)[0m
+      [36m# ./spec/system/03_finishing_touches_spec.rb:197:in `block (3 levels) in <main>'[0m
+
+  57) [STEP3] 仕上げのテスト ログインしていない場合のアクセス制限のテスト: アクセスできず、ログイン画面に遷移する 投稿編集画面
+      [31mFailure/Error: is_expected.to eq '/users/sign_in'[0m
+      [31m[0m
+      [31m  expected: "/users/sign_in"[0m
+      [31m       got: "/bookers2/users/sign_in"[0m
+      [31m[0m
+      [31m  (compared using ==)[0m
+      [36m# ./spec/system/03_finishing_touches_spec.rb:201:in `block (3 levels) in <main>'[0m
+
+  58) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 URLが正しい
+      [31mFailure/Error: expect(current_path).to eq '/books/' + other_book.id.to_s[0m
+      [31m[0m
+      [31m  expected: "/books/2"[0m
+      [31m       got: "/bookers2/books/2"[0m
+      [31m[0m
+      [31m  (compared using ==)[0m
+      [36m# ./spec/system/03_finishing_touches_spec.rb:220:in `block (5 levels) in <main>'[0m
+
+  59) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 「Book detail」と表示される
+      [31mFailure/Error: expect(page).to have_content 'Book detail'[0m
+      [31m  expected to find text "Book detail" in "Bookers\nHome Users Books Log out\nUser info\nname\nn5gknvltvu\nintroduction\n43j8cs4velqfkqjo0k9z\nNEW book\nTitle\nOpinion\nBooks detail\nn5gknvltvu\nkr0vs\n14flqg5ikv2ym69lxmhr\nCopyRight Infratop.inc"[0m
+      [36m# ./spec/system/03_finishing_touches_spec.rb:223:in `block (5 levels) in <main>'[0m
+
+  60) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 他人のユーザ編集画面へのリンクが存在する
+      [31mFailure/Error: expect(page).to have_link '', href: edit_user_path(other_user)[0m
+      [31m  expected to find link "" with href "/bookers2/users/2/edit" but there were no matches[0m
+      [36m# ./spec/system/03_finishing_touches_spec.rb:248:in `block (5 levels) in <main>'[0m
+
+  61) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿編集画面 遷移できず、投稿一覧画面にリダイレクトされる
+      [31mFailure/Error: expect(current_path).to eq '/books'[0m
+      [31m[0m
+      [31m  expected: "/books"[0m
+      [31m       got: "/bookers2/books/3/edit"[0m
+      [31m[0m
+      [31m  (compared using ==)[0m
+      [36m# ./spec/system/03_finishing_touches_spec.rb:269:in `block (4 levels) in <main>'[0m
+
+  62) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト 表示の確認 URLが正しい
+      [31mFailure/Error: expect(current_path).to eq '/users/' + other_user.id.to_s[0m
+      [31m[0m
+      [31m  expected: "/users/2"[0m
+      [31m       got: "/bookers2/users/2"[0m
+      [31m[0m
+      [31m  (compared using ==)[0m
+      [36m# ./spec/system/03_finishing_touches_spec.rb:280:in `block (5 levels) in <main>'[0m
+
+  63) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト サイドバーの確認 他人のユーザ編集画面へのリンクが存在する
+      [31mFailure/Error: expect(page).to have_link '', href: edit_user_path(other_user)[0m
+      [31m  expected to find link "" with href "/bookers2/users/2/edit" but there were no matches[0m
+      [36m# ./spec/system/03_finishing_touches_spec.rb:303:in `block (5 levels) in <main>'[0m
+
+  64) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ情報編集画面 遷移できず、自分のユーザ詳細画面にリダイレクトされる
+      [31mFailure/Error: expect(current_path).to eq '/users/' + user.id.to_s[0m
+      [31m[0m
+      [31m  expected: "/users/1"[0m
+      [31m       got: "/bookers2/books"[0m
+      [31m[0m
+      [31m  (compared using ==)[0m
+      [36m# ./spec/system/03_finishing_touches_spec.rb:318:in `block (4 levels) in <main>'[0m
+
+  65) [STEP3] 仕上げのテスト グリッドシステムのテスト: container, row, col-md-〇を正しく使えている ユーザ一覧画面
+      [31mFailure/Error: is_expected.to have_selector '.container .row .col-md-3'[0m
+      [31m  expected to find css ".container .row .col-md-3" but there were no matches[0m
+      [36m# ./spec/system/03_finishing_touches_spec.rb:335:in `block (3 levels) in <main>'[0m
+
+  66) [STEP3] 仕上げのテスト グリッドシステムのテスト: container, row, col-md-〇を正しく使えている ユーザ詳細画面
+      [31mFailure/Error: is_expected.to have_selector '.container .row .col-md-3'[0m
+      [31m  expected to find css ".container .row .col-md-3" but there were no matches[0m
+      [36m# ./spec/system/03_finishing_touches_spec.rb:340:in `block (3 levels) in <main>'[0m
+
+  67) [STEP3] 仕上げのテスト グリッドシステムのテスト: container, row, col-md-〇を正しく使えている 投稿一覧画面
+      [31mFailure/Error: is_expected.to have_selector '.container .row .col-md-3'[0m
+      [31m  expected to find css ".container .row .col-md-3" but there were no matches[0m
+      [36m# ./spec/system/03_finishing_touches_spec.rb:345:in `block (3 levels) in <main>'[0m
+
+  68) [STEP3] 仕上げのテスト グリッドシステムのテスト: container, row, col-md-〇を正しく使えている 投稿詳細画面
+      [31mFailure/Error: is_expected.to have_selector '.container .row .col-md-3'[0m
+      [31m  expected to find css ".container .row .col-md-3" but there were no matches[0m
+      [36m# ./spec/system/03_finishing_touches_spec.rb:350:in `block (3 levels) in <main>'[0m
+
+  69) [STEP3] 仕上げのテスト アイコンのテスト アバウト画面 本のアイコンが表示される
       [31mFailure/Error: visit '/home/about'[0m
       [31m[0m
       [31mActionController::RoutingError:[0m
       [31m  No route matches [GET] "/home/about"[0m
-      [36m# ./spec/system/01_before_login_spec.rb:34:in `block (3 levels) in <main>'[0m
+      [36m# ./spec/system/03_finishing_touches_spec.rb:372:in `block (4 levels) in <main>'[0m
 
-  20) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 リンクの内容を確認 Aboutを押すと、アバウト画面に遷移する
-      [31mFailure/Error: is_expected.to eq '/home/about'[0m
-      [31m[0m
-      [31m  expected: "/home/about"[0m
-      [31m       got: "/about"[0m
-      [31m[0m
-      [31m  (compared using ==)[0m
-      [36m# ./spec/system/01_before_login_spec.rb:93:in `block (4 levels) in <main>'[0m
-
-  21) [STEP1] ユーザログイン前のテスト ユーザ新規登録のテスト 新規登録成功のテスト 正しく新規登録される
-      [31mFailure/Error: expect { click_button 'Sign up' }.to change(User.all, :count).by(1)[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction' for #<User id: nil, email: "", name: "y3na9h1tal", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/01_before_login_spec.rb:148:in `block (5 levels) in <main>'[0m
-      [36m# ./spec/system/01_before_login_spec.rb:148:in `block (4 levels) in <main>'[0m
-
-  22) [STEP1] ユーザログイン前のテスト ユーザ新規登録のテスト 新規登録成功のテスト 新規登録後のリダイレクト先が、新規登録できたユーザの詳細画面になっている
-      [31mFailure/Error: click_button 'Sign up'[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction' for #<User id: nil, email: "", name: "m56k51lom0", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/01_before_login_spec.rb:151:in `block (4 levels) in <main>'[0m
-
-  23) [STEP1] ユーザログイン前のテスト ユーザログイン ログイン成功のテスト ログイン後のリダイレクト先が、ログインしたユーザの詳細画面になっている
-      [31mFailure/Error: let(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "elbert_miller@jast.test", name: "9bc5pq4i99", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/01_before_login_spec.rb:158:in `block (3 levels) in <main>'[0m
-      [36m# ./spec/system/01_before_login_spec.rb:187:in `block (4 levels) in <main>'[0m
-
-  24) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 Bookersリンクが表示される: 左上から1番目のリンクが「Bookers」である
-      [31mFailure/Error: let(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "hai_batz@schaefer.test", name: "dujv40blu3", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/01_before_login_spec.rb:211:in `block (3 levels) in <main>'[0m
-      [36m# ./spec/system/01_before_login_spec.rb:215:in `block (3 levels) in <main>'[0m
-
-  25) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 Homeリンクが表示される: 左上から2番目のリンクが「Home」である
-      [31mFailure/Error: let(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "david.bayer@pollich.test", name: "qyxw644a1l", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/01_before_login_spec.rb:211:in `block (3 levels) in <main>'[0m
-      [36m# ./spec/system/01_before_login_spec.rb:215:in `block (3 levels) in <main>'[0m
-
-  26) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 Usersリンクが表示される: 左上から3番目のリンクが「Users」である
-      [31mFailure/Error: let(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "burt.stokes@schuppe.test", name: "2wolblwhhd", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/01_before_login_spec.rb:211:in `block (3 levels) in <main>'[0m
-      [36m# ./spec/system/01_before_login_spec.rb:215:in `block (3 levels) in <main>'[0m
-
-  27) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 Booksリンクが表示される: 左上から4番目のリンクが「Books」である
-      [31mFailure/Error: let(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "cletus_ullrich@ernser-stokes.example", name: "mzx96sxlga", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/01_before_login_spec.rb:211:in `block (3 levels) in <main>'[0m
-      [36m# ./spec/system/01_before_login_spec.rb:215:in `block (3 levels) in <main>'[0m
-
-  28) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 Log outリンクが表示される: 左上から5番目のリンクが「Log out」である
-      [31mFailure/Error: let(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "tai.yost@zboncak.example", name: "jmmw0s6wqh", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/01_before_login_spec.rb:211:in `block (3 levels) in <main>'[0m
-      [36m# ./spec/system/01_before_login_spec.rb:215:in `block (3 levels) in <main>'[0m
-
-  29) [STEP1] ユーザログイン前のテスト ユーザログアウトのテスト ログアウト機能のテスト 正しくログアウトできている: ログアウト後のリダイレクト先においてAbout画面へのリンクが存在する
-      [31mFailure/Error: let(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "alysha.stark@west.example", name: "w9rezzjg84", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/01_before_login_spec.rb:245:in `block (3 levels) in <main>'[0m
-      [36m# ./spec/system/01_before_login_spec.rb:249:in `block (3 levels) in <main>'[0m
-
-  30) [STEP1] ユーザログイン前のテスト ユーザログアウトのテスト ログアウト機能のテスト ログアウト後のリダイレクト先が、トップになっている
-      [31mFailure/Error: let(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "august_boehm@steuber.example", name: "a6131sx3t2", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/01_before_login_spec.rb:245:in `block (3 levels) in <main>'[0m
-      [36m# ./spec/system/01_before_login_spec.rb:249:in `block (3 levels) in <main>'[0m
-
-  31) [STEP2] ユーザログイン後のテスト ヘッダーのテスト: ログインしている場合 リンクの内容を確認: ※logoutは『ユーザログアウトのテスト』でテスト済みになります。 Homeを押すと、自分のユーザ詳細画面に遷移する
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "hollis_auer@williamson-will.example", name: "mtoz432a1b", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  32) [STEP2] ユーザログイン後のテスト ヘッダーのテスト: ログインしている場合 リンクの内容を確認: ※logoutは『ユーザログアウトのテスト』でテスト済みになります。 Usersを押すと、ユーザ一覧画面に遷移する
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "blair@hartmann-satterfield.test", name: "kdz810pz3h", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  33) [STEP2] ユーザログイン後のテスト ヘッダーのテスト: ログインしている場合 リンクの内容を確認: ※logoutは『ユーザログアウトのテスト』でテスト済みになります。 Booksを押すと、投稿一覧画面に遷移する
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "emile.brown@bashirian.test", name: "zp52n2qmx3", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  34) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 表示内容の確認 URLが正しい
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "josue_adams@beatty.test", name: "c9wdyuecms", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  35) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 表示内容の確認 自分と他人の画像のリンク先が正しい
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "enid@koelpin.test", name: "rzfpfkkhb7", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  36) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 表示内容の確認 自分の投稿と他人の投稿のタイトルのリンク先がそれぞれ正しい
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "maricela_beatty@durgan.test", name: "zuanq4gkzy", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  37) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 表示内容の確認 自分の投稿と他人の投稿のオピニオンが表示される
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "trevor.morar@senger.test", name: "95756xlaq6", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  38) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 自分の名前と紹介文が表示される
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "grant_graham@lubowitz.test", name: "88zwax7bay", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  39) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクが存在する
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "austin@bruen.test", name: "udeugj8ry2", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  40) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 「New book」と表示される
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "maria@ledner.example", name: "es395eo6m2", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  41) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 titleフォームが表示される
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "alleen@volkman-schulist.test", name: "k2w0wjnt66", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  42) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 titleフォームに値が入っていない
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "merrill.hirthe@beahan.example", name: "h62wj5pnbz", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  43) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 bodyフォームが表示される
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "cody@franecki-koss.test", name: "ml54hlkslg", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  44) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 bodyフォームに値が入っていない
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "hyo_torp@hirthe.test", name: "nqgridht2o", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  45) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 Create Bookボタンが表示される
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "arlen@littel.test", name: "3yov2amjex", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  46) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 投稿成功のテスト 自分の新しい投稿が正しく保存される
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "thaddeus@connelly.example", name: "2uykg5gh72", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  47) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 投稿成功のテスト リダイレクト先が、保存できた投稿の詳細画面になっている
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "conception@stracke.example", name: "ohth91iwzq", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  48) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 URLが正しい
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "stefan.kunze@bernhard.test", name: "ws45xseh9y", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  49) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 「Book detail」と表示される
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "paulina@sipes-schroeder.example", name: "sql75xhghv", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  50) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 ユーザ画像・名前のリンク先が正しい
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "stephenie@kuhlman.example", name: "0iwxvzb242", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  51) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 投稿のtitleが表示される
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "elizabeth_streich@hane.test", name: "txiwkhf4z2", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  52) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 投稿のbodyが表示される
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "brande@swift.example", name: "b7z288jw89", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  53) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 投稿の編集リンクが表示される
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "enoch.collier@jaskolski.test", name: "hl8jwik7dw", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  54) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 投稿の削除リンクが表示される
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "donn_murazik@grady-howe.example", name: "8ve0wnl5sn", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  55) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 自分の名前と紹介文が表示される
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "teodoro_stracke@metz-kihn.test", name: "bx06p49pp8", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  56) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクが存在する
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "dorie@steuber.example", name: "2tog7rzs0b", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  57) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 「New book」と表示される
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "kermit_romaguera@jast-jerde.example", name: "h6xaaojuvf", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  58) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 titleフォームが表示される
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "hoa@graham-keeling.test", name: "8v1tuyixs2", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  59) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 titleフォームに値が入っていない
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "raphael.daniel@skiles.test", name: "hkfyzfw9yc", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  60) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 bodyフォームが表示される
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "brad.mitchell@mckenzie-mcdermott.example", name: "xk85ynoai6", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  61) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 bodyフォームに値が入っていない
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "jalisa_kuhic@roberts-quigley.test", name: "9vkz7dq8o0", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  62) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 Create Bookボタンが表示される
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "jayson.dubuque@walsh.test", name: "gtd7wsup7s", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  63) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 投稿成功のテスト 自分の新しい投稿が正しく保存される
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "rina.raynor@schimmel-lebsack.example", name: "9f12i4enuj", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  64) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 編集リンクのテスト 編集画面に遷移する
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "brice@wisozk.example", name: "nsjzyfi8bd", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  65) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 削除リンクのテスト application.html.erbにjavascript_pack_tagを含んでいる
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "janean@heller.example", name: "zkk14lauy7", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  66) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 削除リンクのテスト 正しく削除される
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "ted_conroy@romaguera.test", name: "g3t73oq74r", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  67) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 削除リンクのテスト リダイレクト先が、投稿一覧画面になっている
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "lucie.vonrueden@schaefer.example", name: "ni81jyh31m", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  68) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 URLが正しい
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "stan_mayer@ferry-cruickshank.test", name: "t7qe85n9aq", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  69) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 「Editing Book」と表示される
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "denae.heidenreich@kris.example", name: "o73n8dqv3n", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  70) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 title編集フォームが表示される
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "sondra.graham@mcdermott-haag.example", name: "oe60jk2tte", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  71) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 body編集フォームが表示される
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "eldridge@yundt.test", name: "xvelmt9bzk", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  72) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 Update Bookボタンが表示される
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "jan@sipes-muller.test", name: "jkcds424pu", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  73) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 Showリンクが表示される
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "cyril_armstrong@lockman-kessler.example", name: "iarv1yq61f", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  74) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 Backリンクが表示される
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "noe.lowe@corwin.example", name: "klkvtqg946", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  75) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 編集成功のテスト titleが正しく更新される
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "marlen@kreiger.test", name: "slto209ovs", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  76) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 編集成功のテスト bodyが正しく更新される
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "jake@wilkinson.test", name: "qog5ir6lul", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  77) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 編集成功のテスト リダイレクト先が、更新した投稿の詳細画面になっている
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "brice.bayer@schmitt.test", name: "bkzw4tt25l", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  78) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト 表示内容の確認 URLが正しい
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "eldon_abernathy@ziemann.example", name: "fifbl9u8cg", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  79) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト 表示内容の確認 自分と他人の画像が表示される: fallbackの画像がサイドバーの1つ＋一覧(2人)の2つの計3つ存在する
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "codi_lehner@bashirian-hackett.test", name: "6dytjim0y0", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  80) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト 表示内容の確認 自分と他人の名前がそれぞれ表示される
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "taylor@moore.test", name: "1ja7a1fnoq", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  81) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト 表示内容の確認 自分と他人のshowリンクがそれぞれ表示される
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "angla_steuber@zieme.example", name: "18xr7vaiwu", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  82) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 自分の名前と紹介文が表示される
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "quintin_davis@runolfsson.test", name: "rd607enkl4", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  83) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクが存在する
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "charley.hahn@hessel.test", name: "82efi5o5sg", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  84) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 「New book」と表示される
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "cody@becker.example", name: "3con6kgr79", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  85) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 titleフォームが表示される
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "edward@greenfelder.test", name: "i9xa29noua", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  86) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 titleフォームに値が入っていない
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "elias@breitenberg.test", name: "sdtsb311u6", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  87) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 bodyフォームが表示される
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "miguel.lueilwitz@mcglynn.example", name: "t4enka8inb", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  88) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 bodyフォームに値が入っていない
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "dana.beer@pagac.example", name: "h1afziacrp", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  89) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 Create Bookボタンが表示される
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "ramon.nienow@kirlin.test", name: "gbur2rinzw", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  90) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト 表示の確認 URLが正しい
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "louise_lockman@halvorson.test", name: "bu0b4jq8zh", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  91) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト 表示の確認 投稿一覧のユーザ画像のリンク先が正しい
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "otelia_wehner@willms.test", name: "ivlhqpksl8", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  92) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト 表示の確認 投稿一覧に自分の投稿のtitleが表示され、リンクが正しい
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "janita@kautzer.test", name: "i7d2r00mp5", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  93) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト 表示の確認 投稿一覧に自分の投稿のbodyが表示される
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "cleo@howell-lang.example", name: "vbxdt3hqon", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  94) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト 表示の確認 他人の投稿は表示されない
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "scot.hintz@blanda.test", name: "20z4g39ii5", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  95) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 自分の名前と紹介文が表示される
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "edgar@waters-botsford.example", name: "coplkuznvs", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  96) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクが存在する
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "richie_wilkinson@lubowitz-feil.test", name: "qwbvk6ol2y", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  97) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 「New book」と表示される
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "gigi@murphy-wilderman.example", name: "gmlj3duiea", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  98) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 titleフォームが表示される
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "enoch_heller@ullrich.example", name: "h4vpm27po5", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  99) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 titleフォームに値が入っていない
-      [31mFailure/Error: let!(:user) { create(:user) }[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `introduction=' for #<User id: nil, email: "dimple@von-sawayn.example", name: "maxwtoieri", created_at: nil, updated_at: nil>[0m
-      [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  100) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 bodyフォームが表示される
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "quentin_armstrong@schumm.test", name: "uj89dsjgx9", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  101) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 bodyフォームに値が入っていない
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "lise_leffler@hirthe-bogisich.example", name: "1o4r5cqgvu", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  102) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 Create Bookボタンが表示される
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "lesley@brakus.example", name: "uz24i6q3ew", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  103) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 URLが正しい
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "kenia@bahringer.test", name: "kyw548rsmw", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  104) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 名前編集フォームに自分の名前が表示される
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "demarcus.okeefe@runolfsdottir.example", name: "g3qw4rezut", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  105) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 画像編集フォームが表示される
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "garrett@torphy.test", name: "pll2eiwmhi", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  106) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 自己紹介編集フォームに自分の自己紹介文が表示される
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "quentin@champlin.example", name: "4aj27mpced", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  107) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 Update Userボタンが表示される
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "yadira_quitzon@rempel-hermann.example", name: "yyexfdaz88", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  108) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 更新成功のテスト nameが正しく更新される
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "jonathan@baumbach.test", name: "rap35tqz2t", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  109) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 更新成功のテスト introductionが正しく更新される
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "macie@pfeffer.example", name: "f8lfanzw5v", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  110) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 更新成功のテスト リダイレクト先が、自分のユーザ詳細画面になっている
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "clifford@white-legros.test", name: "gl33jx1t6p", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/02_after_login_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  111) [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザ新規登録成功時
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "kiley@becker.example", name: "xc6ydiu6kc", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  112) [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザログイン成功時
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "harlan_orn@schroeder-paucek.test", name: "02fjgq1fp1", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  113) [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザログアウト成功時
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "alanna_cormier@schinner.example", name: "3qfxowstfq", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  114) [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザのプロフィール情報更新成功時
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "deonna@wiegand-upton.test", name: "bpimonk0hy", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  115) [STEP3] 仕上げのテスト サクセスメッセージのテスト 投稿データの新規投稿成功時: 投稿一覧画面から行います。
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "maricela@moen.example", name: "6omrestnru", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  116) [STEP3] 仕上げのテスト サクセスメッセージのテスト 投稿データの更新成功時
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "granville_stoltenberg@jakubowski.example", name: "td6bhp1p51", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  117) [STEP3] 仕上げのテスト 処理失敗時のテスト ユーザ新規登録失敗: nameを1文字にする 新規登録されない
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "george.bashirian@anderson.example", name: "gssig97kv9", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  118) [STEP3] 仕上げのテスト 処理失敗時のテスト ユーザ新規登録失敗: nameを1文字にする 新規登録画面を表示しており、フォームの内容が正しい
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "edgar@mohr-swaniawski.example", name: "lf1x6gpmv2", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  119) [STEP3] 仕上げのテスト 処理失敗時のテスト ユーザ新規登録失敗: nameを1文字にする バリデーションエラーが表示される
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "dorla@bashirian.example", name: "j3ni3z9v0y", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  120) [STEP3] 仕上げのテスト 処理失敗時のテスト ユーザのプロフィール情報編集失敗: nameを1文字にする 更新されない
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "glennis.stamm@considine.example", name: "4x3bc352yn", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  121) [STEP3] 仕上げのテスト 処理失敗時のテスト ユーザのプロフィール情報編集失敗: nameを1文字にする ユーザ編集画面を表示しており、フォームの内容が正しい
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "erasmo.homenick@sauer.example", name: "mm6zi7q0xd", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  122) [STEP3] 仕上げのテスト 処理失敗時のテスト ユーザのプロフィール情報編集失敗: nameを1文字にする バリデーションエラーが表示される
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "lucio@langworth.example", name: "jm7lkp1d9b", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  123) [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの新規投稿失敗: 投稿一覧画面から行い、titleを空にする 投稿が保存されない
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "leonor_bruen@luettgen.test", name: "wwaglzeb8y", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  124) [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの新規投稿失敗: 投稿一覧画面から行い、titleを空にする 投稿一覧画面を表示している
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "wilson@stroman.test", name: "d362z6070b", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  125) [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの新規投稿失敗: 投稿一覧画面から行い、titleを空にする 新規投稿フォームの内容が正しい
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "marylouise@halvorson.test", name: "mg4kozb40d", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  126) [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの新規投稿失敗: 投稿一覧画面から行い、titleを空にする バリデーションエラーが表示される
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "valentine@braun.test", name: "s75zg9shb6", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  127) [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの更新失敗: titleを空にする 投稿が更新されない
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "neville_kerluke@koepp.example", name: "i2iy2jxfua", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  128) [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの更新失敗: titleを空にする 投稿編集画面を表示しており、フォームの内容が正しい
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "dalila.reinger@lebsack-renner.example", name: "hgq0fdznrh", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  129) [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの更新失敗: titleを空にする エラーメッセージが表示される
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "bud@kuhn.example", name: "fdh93hbtjm", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  130) [STEP3] 仕上げのテスト ログインしていない場合のアクセス制限のテスト: アクセスできず、ログイン画面に遷移する ユーザ一覧画面
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "arline.murray@lind.test", name: "95sxocjxa0", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  131) [STEP3] 仕上げのテスト ログインしていない場合のアクセス制限のテスト: アクセスできず、ログイン画面に遷移する ユーザ詳細画面
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "claribel@okeefe-ernser.example", name: "iu1831hpom", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  132) [STEP3] 仕上げのテスト ログインしていない場合のアクセス制限のテスト: アクセスできず、ログイン画面に遷移する ユーザ情報編集画面
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "walter@considine-parisian.example", name: "fdr41snkv0", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  133) [STEP3] 仕上げのテスト ログインしていない場合のアクセス制限のテスト: アクセスできず、ログイン画面に遷移する 投稿一覧画面
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "rosaura@kling.example", name: "ru6s0sc479", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  134) [STEP3] 仕上げのテスト ログインしていない場合のアクセス制限のテスト: アクセスできず、ログイン画面に遷移する 投稿詳細画面
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "wendell@sauer.test", name: "3vux1gilh7", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  135) [STEP3] 仕上げのテスト ログインしていない場合のアクセス制限のテスト: アクセスできず、ログイン画面に遷移する 投稿編集画面
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "lorenzo_cummerata@gutkowski.test", name: "xpgarih9my", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  136) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 URLが正しい
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "will@kshlerin-brown.test", name: "eqkwktp8lu", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  137) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 「Book detail」と表示される
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "terese@hudson.test", name: "3tv4funr56", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  138) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 ユーザ画像・名前のリンク先が正しい
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "pamala@halvorson.test", name: "rui5jly0tr", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  139) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 投稿のtitleが表示される
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "arturo.kessler@kris-lynch.example", name: "tn7hhdslyu", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  140) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 投稿のopinionが表示される
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "monica@west.example", name: "curcljdpb2", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  141) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 投稿の編集リンクが表示されない
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "jerrold@mcclure-oconnell.example", name: "7kmohbbaay", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  142) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 投稿の削除リンクが表示されない
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "particia_adams@miller.example", name: "20u0y31p7c", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  143) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 他人の名前と紹介文が表示される
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "clint@gusikowski-corwin.test", name: "dr9nllthpc", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  144) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 他人のユーザ編集画面へのリンクが存在する
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "lawrence.schumm@littel-osinski.example", name: "aq371gpsvm", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  145) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 自分の名前と紹介文は表示されない
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "candida@bergnaum.test", name: "el45vjdbnf", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  146) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクは存在しない
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "minerva_conroy@dicki.example", name: "z88h57gohm", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  147) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿編集画面 遷移できず、投稿一覧画面にリダイレクトされる
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "luigi.smith@wehner-bergstrom.test", name: "b45jlfa0ki", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  148) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト 表示の確認 URLが正しい
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "wilfredo.gleason@bruen.example", name: "1dxchxn1jo", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  149) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト 表示の確認 投稿一覧のユーザ画像のリンク先が正しい
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "antone@stokes-white.example", name: "xjiigaeq1p", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  150) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト 表示の確認 投稿一覧に他人の投稿のtitleが表示され、リンクが正しい
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "reginald@boyle.test", name: "5wvrm0ltdb", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  151) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト 表示の確認 投稿一覧に他人の投稿のopinionが表示される
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "danial_leffler@reichel.test", name: "stu6ymn4yq", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  152) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト 表示の確認 自分の投稿は表示されない
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "geoffrey@greenfelder-predovic.example", name: "quxdszk3l1", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  153) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト サイドバーの確認 他人の名前と紹介文が表示される
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "erma@grady.test", name: "qdt2xmuf5q", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  154) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト サイドバーの確認 他人のユーザ編集画面へのリンクが存在する
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "reginia.dach@shanahan.example", name: "10e4wf38rs", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  155) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト サイドバーの確認 自分の名前と紹介文は表示されない
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "derrick@mann-prosacco.test", name: "7ggj1yex58", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  156) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクは存在しない
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "lorenzo@hyatt.example", name: "aljmlf2isb", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  157) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ情報編集画面 遷移できず、自分のユーザ詳細画面にリダイレクトされる
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "stephenie_schoen@hackett-hackett.test", name: "tis4bnm1j5", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  158) [STEP3] 仕上げのテスト グリッドシステムのテスト: container, row, col-md-〇を正しく使えている ユーザ一覧画面
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "darell@ruecker-haag.test", name: "xuai5s8wfh", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  159) [STEP3] 仕上げのテスト グリッドシステムのテスト: container, row, col-md-〇を正しく使えている ユーザ詳細画面
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "luke@harris.example", name: "ap7ofy9q96", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  160) [STEP3] 仕上げのテスト グリッドシステムのテスト: container, row, col-md-〇を正しく使えている 投稿一覧画面
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "kaylee@wolf.test", name: "aj07rjqjqr", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  161) [STEP3] 仕上げのテスト グリッドシステムのテスト: container, row, col-md-〇を正しく使えている 投稿詳細画面
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "soledad_rohan@mills.test", name: "ow4cny6tc4", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  162) [STEP3] 仕上げのテスト アイコンのテスト トップ画面 本のアイコンが表示される
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "joshua.schumm@kessler.test", name: "cs6yn00kd7", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  163) [STEP3] 仕上げのテスト アイコンのテスト アバウト画面 本のアイコンが表示される
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "thanh.davis@barton.example", name: "yrf4o7yqui", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  164) [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしていない場合 Homeリンクのアイコンが表示される
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "damaris.schaden@sanford-kuvalis.example", name: "hytgjstds4", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  165) [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしていない場合 Aboutリンクのアイコンが表示される
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "in_haag@collins-langosh.example", name: "9qgvl10msb", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  166) [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしていない場合 Sign upリンクのアイコンが表示される
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "gerard@gerhold.example", name: "e29g0nhoz4", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  167) [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしていない場合 Log inリンクのアイコンが表示される
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "tommie@olson.test", name: "b5c4i6mbhm", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  168) [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしている場合 Homeリンクのアイコンが表示される
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "emil@kuhic-schmidt.test", name: "fp4vekin57", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  169) [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしている場合 Usersリンクのアイコンが表示される
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "demarcus@howell.example", name: "wzbzjfqjnr", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  170) [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしている場合 Booksリンクのアイコンが表示される
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "palma.buckridge@strosin.test", name: "mx0fz7fy9m", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  171) [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしている場合 Log outリンクのアイコンが表示される
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "etta@heaney.test", name: "bpu3hpxaif", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  172) [STEP3] 仕上げのテスト アイコンのテスト サイドバー ユーザ一覧画面でレンチアイコンが表示される
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "cindi.tillman@bruen-fay.test", name: "fesik0li2f", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  173) [STEP3] 仕上げのテスト アイコンのテスト サイドバー ユーザ詳細画面でレンチアイコンが表示される
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "harland_senger@reilly-abshire.example", name: "j0ougjc09v", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  174) [STEP3] 仕上げのテスト アイコンのテスト サイドバー 投稿一覧画面でレンチアイコンが表示される
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "rosalyn.mitchell@medhurst.example", name: "2isc6l1ltq", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-  175) [STEP3] 仕上げのテスト アイコンのテスト サイドバー 投稿詳細画面でレンチアイコンが表示される
-       [31mFailure/Error: let!(:user) { create(:user) }[0m
-       [31m[0m
-       [31mNoMethodError:[0m
-       [31m  undefined method `introduction=' for #<User id: nil, email: "earle.pouros@rutherford.test", name: "qy2ny5ek7x", created_at: nil, updated_at: nil>[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:4:in `block (2 levels) in <main>'[0m
-
-Finished in 1.42 seconds (files took 1.58 seconds to load)
-[31m201 examples, 175 failures[0m
+Finished in 35.07 seconds (files took 1.72 seconds to load)
+[31m201 examples, 69 failures[0m
 
 Failed examples:
 
-[31mrspec ./spec/controllers/users_controller_spec.rb:14[0m [36m# UsersController GET #edit ログインユーザーの場合 レスポンスが成功すること[0m
-[31mrspec ./spec/controllers/users_controller_spec.rb:18[0m [36m# UsersController GET #edit ログインユーザーの場合 @userが正しく設定されていること[0m
-[31mrspec ./spec/models/book_spec.rb:11[0m [36m# Bookモデルのテスト バリデーションのテスト titleカラム 空欄でないこと[0m
-[31mrspec ./spec/models/book_spec.rb:18[0m [36m# Bookモデルのテスト バリデーションのテスト bodyカラム 空欄でないこと[0m
-[31mrspec ./spec/models/book_spec.rb:22[0m [36m# Bookモデルのテスト バリデーションのテスト bodyカラム 200文字以下であること: 200文字は〇[0m
-[31mrspec ./spec/models/book_spec.rb:26[0m [36m# Bookモデルのテスト バリデーションのテスト bodyカラム 200文字以下であること: 201文字は×[0m
-[31mrspec ./spec/models/user_spec.rb:11[0m [36m# Userモデルのテスト バリデーションのテスト nameカラム 空欄でないこと[0m
-[31mrspec ./spec/models/user_spec.rb:15[0m [36m# Userモデルのテスト バリデーションのテスト nameカラム 2文字以上であること: 1文字は×[0m
-[31mrspec ./spec/models/user_spec.rb:19[0m [36m# Userモデルのテスト バリデーションのテスト nameカラム 2文字以上であること: 2文字は〇[0m
-[31mrspec ./spec/models/user_spec.rb:23[0m [36m# Userモデルのテスト バリデーションのテスト nameカラム 20文字以下であること: 20文字は〇[0m
-[31mrspec ./spec/models/user_spec.rb:27[0m [36m# Userモデルのテスト バリデーションのテスト nameカラム 20文字以下であること: 21文字は×[0m
-[31mrspec ./spec/models/user_spec.rb:31[0m [36m# Userモデルのテスト バリデーションのテスト nameカラム 一意性があること[0m
-[31mrspec ./spec/models/user_spec.rb:38[0m [36m# Userモデルのテスト バリデーションのテスト introductionカラム 50文字以下であること: 50文字は〇[0m
-[31mrspec ./spec/models/user_spec.rb:42[0m [36m# Userモデルのテスト バリデーションのテスト introductionカラム 50文字以下であること: 51文字は×[0m
+[31mrspec ./spec/system/01_before_login_spec.rb:10[0m [36m# [STEP1] ユーザログイン前のテスト トップ画面のテスト 表示内容の確認 URLが正しい[0m
 [31mrspec ./spec/system/01_before_login_spec.rb:13[0m [36m# [STEP1] ユーザログイン前のテスト トップ画面のテスト 表示内容の確認 Log inリンクが表示される: 青色のボタンの表示が「Log in」である[0m
 [31mrspec ./spec/system/01_before_login_spec.rb:17[0m [36m# [STEP1] ユーザログイン前のテスト トップ画面のテスト 表示内容の確認 Log inリンクの内容が正しい[0m
 [31mrspec ./spec/system/01_before_login_spec.rb:21[0m [36m# [STEP1] ユーザログイン前のテスト トップ画面のテスト 表示内容の確認 Sign upリンクが表示される: 緑色のボタンの表示が「Sign up」である[0m
 [31mrspec ./spec/system/01_before_login_spec.rb:25[0m [36m# [STEP1] ユーザログイン前のテスト トップ画面のテスト 表示内容の確認 Sign upリンクの内容が正しい[0m
 [31mrspec ./spec/system/01_before_login_spec.rb:38[0m [36m# [STEP1] ユーザログイン前のテスト アバウト画面のテスト 表示内容の確認 URLが正しい[0m
+[31mrspec ./spec/system/01_before_login_spec.rb:75[0m [36m# [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 リンクの内容を確認 Bookersを押すと、トップ画面に遷移する[0m
+[31mrspec ./spec/system/01_before_login_spec.rb:82[0m [36m# [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 リンクの内容を確認 Homeを押すと、トップ画面に遷移する[0m
 [31mrspec ./spec/system/01_before_login_spec.rb:89[0m [36m# [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 リンクの内容を確認 Aboutを押すと、アバウト画面に遷移する[0m
-[31mrspec ./spec/system/01_before_login_spec.rb:147[0m [36m# [STEP1] ユーザログイン前のテスト ユーザ新規登録のテスト 新規登録成功のテスト 正しく新規登録される[0m
+[31mrspec ./spec/system/01_before_login_spec.rb:95[0m [36m# [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 リンクの内容を確認 Sign upを押すと、新規登録画面に遷移する[0m
+[31mrspec ./spec/system/01_before_login_spec.rb:101[0m [36m# [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 リンクの内容を確認 Log inを押すと、ログイン画面に遷移する[0m
+[31mrspec ./spec/system/01_before_login_spec.rb:116[0m [36m# [STEP1] ユーザログイン前のテスト ユーザ新規登録のテスト 表示内容の確認 URLが正しい[0m
 [31mrspec ./spec/system/01_before_login_spec.rb:150[0m [36m# [STEP1] ユーザログイン前のテスト ユーザ新規登録のテスト 新規登録成功のテスト 新規登録後のリダイレクト先が、新規登録できたユーザの詳細画面になっている[0m
+[31mrspec ./spec/system/01_before_login_spec.rb:165[0m [36m# [STEP1] ユーザログイン前のテスト ユーザログイン 表示内容の確認 URLが正しい[0m
 [31mrspec ./spec/system/01_before_login_spec.rb:192[0m [36m# [STEP1] ユーザログイン前のテスト ユーザログイン ログイン成功のテスト ログイン後のリダイレクト先が、ログインしたユーザの詳細画面になっている[0m
-[31mrspec ./spec/system/01_before_login_spec.rb:221[0m [36m# [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 Bookersリンクが表示される: 左上から1番目のリンクが「Bookers」である[0m
-[31mrspec ./spec/system/01_before_login_spec.rb:225[0m [36m# [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 Homeリンクが表示される: 左上から2番目のリンクが「Home」である[0m
-[31mrspec ./spec/system/01_before_login_spec.rb:229[0m [36m# [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 Usersリンクが表示される: 左上から3番目のリンクが「Users」である[0m
-[31mrspec ./spec/system/01_before_login_spec.rb:233[0m [36m# [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 Booksリンクが表示される: 左上から4番目のリンクが「Books」である[0m
-[31mrspec ./spec/system/01_before_login_spec.rb:237[0m [36m# [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 Log outリンクが表示される: 左上から5番目のリンクが「Log out」である[0m
+[31mrspec ./spec/system/01_before_login_spec.rb:204[0m [36m# [STEP1] ユーザログイン前のテスト ユーザログイン ログイン失敗のテスト ログインに失敗し、ログイン画面にリダイレクトされる[0m
 [31mrspec ./spec/system/01_before_login_spec.rb:258[0m [36m# [STEP1] ユーザログイン前のテスト ユーザログアウトのテスト ログアウト機能のテスト 正しくログアウトできている: ログアウト後のリダイレクト先においてAbout画面へのリンクが存在する[0m
 [31mrspec ./spec/system/01_before_login_spec.rb:261[0m [36m# [STEP1] ユーザログイン前のテスト ユーザログアウトのテスト ログアウト機能のテスト ログアウト後のリダイレクト先が、トップになっている[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:20[0m [36m# [STEP2] ユーザログイン後のテスト ヘッダーのテスト: ログインしている場合 リンクの内容を確認: ※logoutは『ユーザログアウトのテスト』でテスト済みになります。 Homeを押すと、自分のユーザ詳細画面に遷移する[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:26[0m [36m# [STEP2] ユーザログイン後のテスト ヘッダーのテスト: ログインしている場合 リンクの内容を確認: ※logoutは『ユーザログアウトのテスト』でテスト済みになります。 Usersを押すと、ユーザ一覧画面に遷移する[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:32[0m [36m# [STEP2] ユーザログイン後のテスト ヘッダーのテスト: ログインしている場合 リンクの内容を確認: ※logoutは『ユーザログアウトのテスト』でテスト済みになります。 Booksを押すと、投稿一覧画面に遷移する[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:47[0m [36m# [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 表示内容の確認 URLが正しい[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:50[0m [36m# [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 表示内容の確認 自分と他人の画像のリンク先が正しい[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:54[0m [36m# [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 表示内容の確認 自分の投稿と他人の投稿のタイトルのリンク先がそれぞれ正しい[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:58[0m [36m# [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 表示内容の確認 自分の投稿と他人の投稿のオピニオンが表示される[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:65[0m [36m# [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 自分の名前と紹介文が表示される[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:69[0m [36m# [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクが存在する[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:72[0m [36m# [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 「New book」と表示される[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:75[0m [36m# [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 titleフォームが表示される[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:78[0m [36m# [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 titleフォームに値が入っていない[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:81[0m [36m# [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 bodyフォームが表示される[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:84[0m [36m# [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 bodyフォームに値が入っていない[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:87[0m [36m# [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 Create Bookボタンが表示される[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:98[0m [36m# [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 投稿成功のテスト 自分の新しい投稿が正しく保存される[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:101[0m [36m# [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 投稿成功のテスト リダイレクト先が、保存できた投稿の詳細画面になっている[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:114[0m [36m# [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 URLが正しい[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:117[0m [36m# [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 「Book detail」と表示される[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:120[0m [36m# [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 ユーザ画像・名前のリンク先が正しい[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:123[0m [36m# [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 投稿のtitleが表示される[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:126[0m [36m# [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 投稿のbodyが表示される[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:129[0m [36m# [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 投稿の編集リンクが表示される[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:132[0m [36m# [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 投稿の削除リンクが表示される[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:138[0m [36m# [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 自分の名前と紹介文が表示される[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:142[0m [36m# [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクが存在する[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:145[0m [36m# [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 「New book」と表示される[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:148[0m [36m# [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 titleフォームが表示される[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:151[0m [36m# [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 titleフォームに値が入っていない[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:154[0m [36m# [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 bodyフォームが表示される[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:157[0m [36m# [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 bodyフォームに値が入っていない[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:160[0m [36m# [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 Create Bookボタンが表示される[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:171[0m [36m# [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 投稿成功のテスト 自分の新しい投稿が正しく保存される[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:180[0m [36m# [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 編集リンクのテスト 編集画面に遷移する[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:189[0m [36m# [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 削除リンクのテスト application.html.erbにjavascript_pack_tagを含んでいる[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:203[0m [36m# [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 削除リンクのテスト 正しく削除される[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:206[0m [36m# [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 削除リンクのテスト リダイレクト先が、投稿一覧画面になっている[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:218[0m [36m# [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 URLが正しい[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:221[0m [36m# [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 「Editing Book」と表示される[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:224[0m [36m# [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 title編集フォームが表示される[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:227[0m [36m# [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 body編集フォームが表示される[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:230[0m [36m# [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 Update Bookボタンが表示される[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:233[0m [36m# [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 Showリンクが表示される[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:236[0m [36m# [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 Backリンクが表示される[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:250[0m [36m# [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 編集成功のテスト titleが正しく更新される[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:253[0m [36m# [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 編集成功のテスト bodyが正しく更新される[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:256[0m [36m# [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 編集成功のテスト リダイレクト先が、更新した投稿の詳細画面になっている[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:269[0m [36m# [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト 表示内容の確認 URLが正しい[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:272[0m [36m# [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト 表示内容の確認 自分と他人の画像が表示される: fallbackの画像がサイドバーの1つ＋一覧(2人)の2つの計3つ存在する[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:275[0m [36m# [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト 表示内容の確認 自分と他人の名前がそれぞれ表示される[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:279[0m [36m# [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト 表示内容の確認 自分と他人のshowリンクがそれぞれ表示される[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:286[0m [36m# [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 自分の名前と紹介文が表示される[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:290[0m [36m# [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクが存在する[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:293[0m [36m# [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 「New book」と表示される[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:296[0m [36m# [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 titleフォームが表示される[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:299[0m [36m# [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 titleフォームに値が入っていない[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:302[0m [36m# [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 bodyフォームが表示される[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:305[0m [36m# [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 bodyフォームに値が入っていない[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:308[0m [36m# [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 Create Bookボタンが表示される[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:320[0m [36m# [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト 表示の確認 URLが正しい[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:323[0m [36m# [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト 表示の確認 投稿一覧のユーザ画像のリンク先が正しい[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:326[0m [36m# [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト 表示の確認 投稿一覧に自分の投稿のtitleが表示され、リンクが正しい[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:329[0m [36m# [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト 表示の確認 投稿一覧に自分の投稿のbodyが表示される[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:332[0m [36m# [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト 表示の確認 他人の投稿は表示されない[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:340[0m [36m# [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 自分の名前と紹介文が表示される[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:344[0m [36m# [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクが存在する[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:347[0m [36m# [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 「New book」と表示される[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:350[0m [36m# [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 titleフォームが表示される[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:353[0m [36m# [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 titleフォームに値が入っていない[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:356[0m [36m# [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 bodyフォームが表示される[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:359[0m [36m# [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 bodyフォームに値が入っていない[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:362[0m [36m# [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 Create Bookボタンが表示される[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:374[0m [36m# [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 URLが正しい[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:377[0m [36m# [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 名前編集フォームに自分の名前が表示される[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:380[0m [36m# [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 画像編集フォームが表示される[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:383[0m [36m# [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 自己紹介編集フォームに自分の自己紹介文が表示される[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:386[0m [36m# [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 Update Userボタンが表示される[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:402[0m [36m# [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 更新成功のテスト nameが正しく更新される[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:405[0m [36m# [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 更新成功のテスト introductionが正しく更新される[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:408[0m [36m# [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 更新成功のテスト リダイレクト先が、自分のユーザ詳細画面になっている[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:12[0m [36m# [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザ新規登録成功時[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:21[0m [36m# [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザログイン成功時[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:28[0m [36m# [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザログアウト成功時[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:38[0m [36m# [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザのプロフィール情報更新成功時[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:47[0m [36m# [STEP3] 仕上げのテスト サクセスメッセージのテスト 投稿データの新規投稿成功時: 投稿一覧画面から行います。[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:58[0m [36m# [STEP3] 仕上げのテスト サクセスメッセージのテスト 投稿データの更新成功時[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:81[0m [36m# [STEP3] 仕上げのテスト 処理失敗時のテスト ユーザ新規登録失敗: nameを1文字にする 新規登録されない[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:84[0m [36m# [STEP3] 仕上げのテスト 処理失敗時のテスト ユーザ新規登録失敗: nameを1文字にする 新規登録画面を表示しており、フォームの内容が正しい[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:90[0m [36m# [STEP3] 仕上げのテスト 処理失敗時のテスト ユーザ新規登録失敗: nameを1文字にする バリデーションエラーが表示される[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:109[0m [36m# [STEP3] 仕上げのテスト 処理失敗時のテスト ユーザのプロフィール情報編集失敗: nameを1文字にする 更新されない[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:112[0m [36m# [STEP3] 仕上げのテスト 処理失敗時のテスト ユーザのプロフィール情報編集失敗: nameを1文字にする ユーザ編集画面を表示しており、フォームの内容が正しい[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:115[0m [36m# [STEP3] 仕上げのテスト 処理失敗時のテスト ユーザのプロフィール情報編集失敗: nameを1文字にする バリデーションエラーが表示される[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:131[0m [36m# [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの新規投稿失敗: 投稿一覧画面から行い、titleを空にする 投稿が保存されない[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:134[0m [36m# [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの新規投稿失敗: 投稿一覧画面から行い、titleを空にする 投稿一覧画面を表示している[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:140[0m [36m# [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの新規投稿失敗: 投稿一覧画面から行い、titleを空にする 新規投稿フォームの内容が正しい[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:144[0m [36m# [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの新規投稿失敗: 投稿一覧画面から行い、titleを空にする バリデーションエラーが表示される[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:162[0m [36m# [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの更新失敗: titleを空にする 投稿が更新されない[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:165[0m [36m# [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの更新失敗: titleを空にする 投稿編集画面を表示しており、フォームの内容が正しい[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:170[0m [36m# [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの更新失敗: titleを空にする エラーメッセージが表示される[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:179[0m [36m# [STEP3] 仕上げのテスト ログインしていない場合のアクセス制限のテスト: アクセスできず、ログイン画面に遷移する ユーザ一覧画面[0m
@@ -1685,42 +876,14 @@ Failed examples:
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:199[0m [36m# [STEP3] 仕上げのテスト ログインしていない場合のアクセス制限のテスト: アクセスできず、ログイン画面に遷移する 投稿編集画面[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:219[0m [36m# [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 URLが正しい[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:222[0m [36m# [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 「Book detail」と表示される[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:225[0m [36m# [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 ユーザ画像・名前のリンク先が正しい[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:228[0m [36m# [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 投稿のtitleが表示される[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:231[0m [36m# [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 投稿のopinionが表示される[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:234[0m [36m# [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 投稿の編集リンクが表示されない[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:237[0m [36m# [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 投稿の削除リンクが表示されない[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:243[0m [36m# [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 他人の名前と紹介文が表示される[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:247[0m [36m# [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 他人のユーザ編集画面へのリンクが存在する[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:250[0m [36m# [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 自分の名前と紹介文は表示されない[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:254[0m [36m# [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクは存在しない[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:265[0m [36m# [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿編集画面 遷移できず、投稿一覧画面にリダイレクトされる[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:279[0m [36m# [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト 表示の確認 URLが正しい[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:282[0m [36m# [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト 表示の確認 投稿一覧のユーザ画像のリンク先が正しい[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:285[0m [36m# [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト 表示の確認 投稿一覧に他人の投稿のtitleが表示され、リンクが正しい[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:288[0m [36m# [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト 表示の確認 投稿一覧に他人の投稿のopinionが表示される[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:291[0m [36m# [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト 表示の確認 自分の投稿は表示されない[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:298[0m [36m# [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト サイドバーの確認 他人の名前と紹介文が表示される[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:302[0m [36m# [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト サイドバーの確認 他人のユーザ編集画面へのリンクが存在する[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:305[0m [36m# [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト サイドバーの確認 自分の名前と紹介文は表示されない[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:309[0m [36m# [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクは存在しない[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:316[0m [36m# [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ情報編集画面 遷移できず、自分のユーザ詳細画面にリダイレクトされる[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:333[0m [36m# [STEP3] 仕上げのテスト グリッドシステムのテスト: container, row, col-md-〇を正しく使えている ユーザ一覧画面[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:338[0m [36m# [STEP3] 仕上げのテスト グリッドシステムのテスト: container, row, col-md-〇を正しく使えている ユーザ詳細画面[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:343[0m [36m# [STEP3] 仕上げのテスト グリッドシステムのテスト: container, row, col-md-〇を正しく使えている 投稿一覧画面[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:348[0m [36m# [STEP3] 仕上げのテスト グリッドシステムのテスト: container, row, col-md-〇を正しく使えている 投稿詳細画面[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:363[0m [36m# [STEP3] 仕上げのテスト アイコンのテスト トップ画面 本のアイコンが表示される[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:375[0m [36m# [STEP3] 仕上げのテスト アイコンのテスト アバウト画面 本のアイコンが表示される[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:387[0m [36m# [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしていない場合 Homeリンクのアイコンが表示される[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:390[0m [36m# [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしていない場合 Aboutリンクのアイコンが表示される[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:393[0m [36m# [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしていない場合 Sign upリンクのアイコンが表示される[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:396[0m [36m# [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしていない場合 Log inリンクのアイコンが表示される[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:411[0m [36m# [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしている場合 Homeリンクのアイコンが表示される[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:414[0m [36m# [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしている場合 Usersリンクのアイコンが表示される[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:417[0m [36m# [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしている場合 Booksリンクのアイコンが表示される[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:420[0m [36m# [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしている場合 Log outリンクのアイコンが表示される[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:435[0m [36m# [STEP3] 仕上げのテスト アイコンのテスト サイドバー ユーザ一覧画面でレンチアイコンが表示される[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:439[0m [36m# [STEP3] 仕上げのテスト アイコンのテスト サイドバー ユーザ詳細画面でレンチアイコンが表示される[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:443[0m [36m# [STEP3] 仕上げのテスト アイコンのテスト サイドバー 投稿一覧画面でレンチアイコンが表示される[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:447[0m [36m# [STEP3] 仕上げのテスト アイコンのテスト サイドバー 投稿詳細画面でレンチアイコンが表示される[0m
 

@@ -4,7 +4,7 @@
    <h1>Editing Book</h1>
    <%= form_with model: @book, class:"d-flex flex-column" do |f| %>
     <label for="title">Title</label>
-    <%= f.text_field :name, autofocus: true, id: "title",class:"form-control w-100" %>
+    <%= f.text_field :title, autofocus: true, id: "title",class:"form-control w-100" %>
    <label for="Opinion">Opinion</label>
     <%= f.text_area :body,autofocus: true, id: "body", class:"form-control w-100",rows: 2 %>
    <%= f.submit "Update Book",class:"btn btn-success mt-3 mb-3", style:"width:120px;" %>
